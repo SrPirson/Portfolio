@@ -11,23 +11,38 @@ import { motion, AnimatePresence } from "framer-motion";
 const socialLinks = [
   { title: "GitHub", icon: <IconBrandGithub />, href: "https://github.com/srpirson" },
   { title: "LinkedIn", icon: <IconBrandLinkedin />, href: "https://www.linkedin.com/in/franciscocortespirson/" },
-  { title: "Email", icon: <IconMail />, href: "mailto:tuemail@ejemplo.com" },
-  { title: "Descargar CV", icon: <IconFileCv />, href: "src/assets/CV/CV-FranciscoCortesPirson.pdf", download: true },
+  { title: "Copiar Email", icon: <IconMail />, copyText: "franciscortesp@gmail.com" },
+  { title: "Descargar CV", icon: <IconFileCv />, href: "/assets/CV/CV-FranciscoCortesPirson.pdf", download: true },
 ];
 
 // Componente para cada icono con tooltip debajo
-const SocialIcon = ({ title, icon, href, download }) => {
+const SocialIcon = ({ title, icon, href, download, copyText }) => {
   const [hovered, setHovered] = useState(false);
+  const [copied, setCopied] = useState(false);
+
+  const handleClick = async (e) => {
+    if (copyText) {
+      e.preventDefault(); // evita abrir enlace
+      try {
+        await navigator.clipboard.writeText(copyText);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 1500); // desaparece tras 1.5s
+      } catch (err) {
+        console.error("No se pudo copiar al portapapeles", err);
+      }
+    }
+  };
 
   return (
     <motion.a
       href={href}
       download={download}
-      target={!download ? "_blank" : undefined}
-      rel={!download ? "noopener noreferrer" : undefined}
+      target={!copyText && !download ? "_blank" : undefined}
+      rel={!copyText && !download ? "noopener noreferrer" : undefined}
       className="relative flex flex-col items-center justify-center"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      onClick={handleClick}
     >
       {/* Icono con animación */}
       <motion.div
@@ -40,7 +55,7 @@ const SocialIcon = ({ title, icon, href, download }) => {
 
       {/* Tooltip debajo */}
       <AnimatePresence>
-        {hovered && (
+        {(hovered || copied) && (
           <motion.div
             initial={{ opacity: 0, y: -5 }}
             animate={{ opacity: 1, y: 6 }}
@@ -48,7 +63,7 @@ const SocialIcon = ({ title, icon, href, download }) => {
             transition={{ duration: 0.2 }}
             className="absolute top-full mt-2 px-2 py-1 text-xs rounded-md bg-gray-800 text-white shadow-md whitespace-nowrap"
           >
-            {title}
+            {copied ? "¡Copiado!" : title}
           </motion.div>
         )}
       </AnimatePresence>
@@ -63,7 +78,7 @@ const Home = () => {
         {/* Imagen */}
         <div className="flex justify-center">
           <img
-            src="src/assets/me-avatar.png"
+            src="/assets/me-avatar.png"
             alt="Me"
             className="w-64 h-auto rounded-lg select-none pointer-events-none drop-shadow-[0_0_25px_rgba(168,85,247,0.3)]"
           />
