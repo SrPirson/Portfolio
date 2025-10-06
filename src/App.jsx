@@ -6,7 +6,20 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import { LayoutTextFlip } from "./components/ui/layout-text-flip";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { AnimatePresence, motion } from "framer-motion";
+
+const pageVariants = {
+  initial: { opacity: 0, y: 20, filter: "blur(8px)" },
+  in: { opacity: 1, y: 0, filter: "blur(0px)" },
+  out: { opacity: 0, y: -20, filter: "blur(8px)" },
+};
+
+const pageTransition = {
+  type: "spring",
+  stiffness: 80,
+  damping: 25,
+  duration: 0.1,
+};
 
 function AppContent() {
   const location = useLocation();
@@ -16,7 +29,7 @@ function AppContent() {
       {/* Navbar */}
       <div className="fixed top-8 left-0 right-0 z-20 px-4 flex items-center">
         {/* Texto animado a la izquierda */}
-        <div className="absolute left-4 text-white pl-20 select-none">
+        <div className="absolute z-10 text-white pl-20 select-none">
           <LayoutTextFlip
             text="Pirson "
             words={["Dev", "Programador", "Desarrollador", "Full Stack"]}
@@ -24,31 +37,31 @@ function AppContent() {
         </div>
 
         {/* Navbar centrado */}
-        <div className="mx-auto">
+        <div className="mx-auto relative z-10">
           <Navbar />
         </div>
       </div>
 
-      {/* Contenido de las páginas con fade */}
-      <div className="container mx-auto px-4">
-        <div className="relative z-10 pt-5 p-8 text-white">
-        <TransitionGroup component={null}>
-          <CSSTransition
+      {/* Contenido */}
+      <div className="container mx-auto px-4 relative z-0 text-white">
+        <AnimatePresence mode="wait">
+          <motion.div
             key={location.pathname}
-            classNames="fade"
-            timeout={400}
+            variants={pageVariants}
+            initial="initial"
+            animate="in"
+            exit="out"
+            transition={pageTransition}
+            className="min-h-screen"
           >
-            <div className="absolute inset-0">
-              <Routes location={location}>
-                <Route path="/" element={<Home />} />
-                <Route path="/about-me" element={<About />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/contact" element={<Contact />} />
-              </Routes>
-            </div>
-          </CSSTransition>
-        </TransitionGroup>
-        </div>
+            <Routes location={location}>
+              <Route path="/" element={<Home />} />
+              <Route path="/about-me" element={<About />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </motion.div>
+        </AnimatePresence>
       </div>
     </>
   );
@@ -57,7 +70,7 @@ function AppContent() {
 function App() {
   return (
     <Router>
-      <div className="min-h-screen w-full fixed bg-black">
+      <div className="min-h-screen w-full relative bg-black">
         {/* Fondo Violet Storm */}
         <div
           className="fixed inset-0 z-0"

@@ -6,7 +6,7 @@ import { cn } from "../../lib/utils";
 export const LayoutTextFlip = ({
   text = "Build Amazing",
   words = ["Landing Pages", "Component Blocks", "Page Sections", "3D Shaders"],
-  duration = 9000,
+  duration = 3500,
 }: {
   text: string;
   words: string[];

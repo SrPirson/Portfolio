@@ -4,6 +4,7 @@ import {
   IconBrandLinkedin,
   IconMail,
   IconFileCv,
+  IconBrandWhatsapp
 } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -12,6 +13,7 @@ const socialLinks = [
   { title: "GitHub", icon: <IconBrandGithub />, href: "https://github.com/srpirson" },
   { title: "LinkedIn", icon: <IconBrandLinkedin />, href: "https://www.linkedin.com/in/franciscocortespirson/" },
   { title: "Copiar Email", icon: <IconMail />, copyText: "franciscortesp@gmail.com" },
+  { title: "WhatsApp", icon: <IconBrandWhatsapp />, href: "https://wa.me/34633586624" },
   { title: "Descargar CV", icon: <IconFileCv />, href: "/assets/CV/CV-FranciscoCortesPirson.pdf", download: true },
 ];
 
@@ -74,7 +76,7 @@ const SocialIcon = ({ title, icon, href, download, copyText }) => {
 const Home = () => {
   return (
     <div className="container">
-      <div className="pt-10 grid grid-cols-1 md:grid-cols-2 min-h-screen place-items-center px-4">
+      <div className=" grid grid-cols-1 md:grid-cols-2 min-h-screen place-items-center px-4">
         {/* Imagen */}
         <div className="flex justify-center">
           <img
