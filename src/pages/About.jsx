@@ -1,23 +1,25 @@
 import React from "react";
 import { Timeline } from "../components/ui/timeline";
+import { IconBooks } from "@tabler/icons-react";
+import Scroll from "/src/components/Scroll";
 
 const About = () => {
   const data = [
     {
       title: "2025",
       content: (
-        <div className="grid grid-cols-3 w-full gap-4 items-center">
-          <div>
-          <h2 className="text-2xl text-violet-200">Fundación Esplai</h2>
-          <p className="mb-8 text-xs font-normal text-neutral-300 md:text-sm">
-            Bootcamp Full Stack Java
-          </p>
+        <div className="flex flex-row w-full gap-4 items-center">
+          <div className="flex-1 text-left">
+            <h2 className="text-lg font-semibold text-violet-200">
+              Bootcamp Full Stack Java
+            </h2>
+            <p className="text-sm font-normal text-neutral-300">Esplai Formación</p>
           </div>
-          <div className="col-span-2 flex justify-center items-center">
-            <div className="h-50 w-full md:h-60 lg:h-50 rounded-lg overflow-hidden drop-shadow-[0_0_25px_rgba(139,92,246,0.5)]">
+          <div className="flex justify-end">
+            <div className="h-32 w-32 rounded-lg overflow-hidden shadow-lg bg-violet-100">
               <img
                 src="/assets/img/logo-FE.png"
-                alt="Logo Fundación Esplai"
+                alt="Logo Esplai"
                 className="w-full h-full object-contain"
               />
             </div>
@@ -28,17 +30,17 @@ const About = () => {
     {
       title: "2023",
       content: (
-        <div className="grid grid-cols-3 w-full gap-4 items-center">
-          <div>
-            <h2 className="text-2xl text-violet-200">MEDAC</h2>
-            <p className="mb-8 text-xs font-normal text-neutral-300 md:text-sm">
-              Técnico Superior en Desarrollo de Aplicaciones Web (DAW)
-            </p>
+        <div className="flex flex-row w-full gap-4 items-center">
+          <div className="flex-1 text-left">
+            <h2 className="text-lg font-semibold text-violet-200">
+              Técnico Superior en Desarrollo de Aplicaciones Web
+            </h2>
+            <p className="text-sm font-normal text-neutral-300">MEDAC</p>
           </div>
-          <div className="col-span-2 flex justify-center items-center">
-            <div className="h-50 w-full md:h-60 lg:h-50 rounded-lg overflow-hidden drop-shadow-[0_0_25px_rgba(139,92,246,0.5)]">
+          <div className="flex justify-end">
+            <div className="h-32 w-32 rounded-lg overflow-hidden shadow-lg bg-violet-100">
               <img
-                src="/assets/img/logo-FE.png"
+                src="/assets/img/logo-Medac.png"
                 alt="Logo MEDAC"
                 className="w-full h-full object-contain"
               />
@@ -50,17 +52,17 @@ const About = () => {
     {
       title: "2018",
       content: (
-        <div className="grid grid-cols-3 w-full gap-4 items-center">
-          <div>
-          <h2 className="text-2xl text-violet-200">I.E.S Belén</h2>
-          <p className="mb-8 text-xs font-normal text-neutral-300 md:text-sm">
-            Técnico en Sistemas Microinformáticos y Redes (SMR)
-          </p>
+        <div className="flex flex-row w-full gap-4 items-center">
+          <div className="flex-1 text-left">
+            <h2 className="text-lg font-semibold text-violet-200">
+              Técnico en Sistemas Microinformáticos y Redes
+            </h2>
+            <p className="text-sm font-normal text-neutral-300">I.E.S Belén</p>
           </div>
-          <div className="col-span-2 flex justify-center items-center">
-            <div className="h-50 w-full md:h-60 lg:h-50 rounded-lg overflow-hidden drop-shadow-[0_0_25px_rgba(139,92,246,0.5)]">
+          <div className="flex justify-end">
+            <div className="h-32 w-32 rounded-lg overflow-hidden shadow-lg bg-violet-100">
               <img
-                src="/assets/img/logo-FE.png"
+                src="/assets/img/logo-Belen.png"
                 alt="Logo IES Belén"
                 className="w-full h-full object-contain"
               />
@@ -73,18 +75,43 @@ const About = () => {
 
   return (
     <div className="container mx-auto px-4 text-white relative">
-      <section className="pt-40 w-full grid grid-cols-1 gap-10 text-center">
-        <div className="relative">
-          <h1 className="text-4xl font-bold text-violet-400 mb-6">Sobre Mí</h1>
-          <p className="text-neutral-300 max-w-2xl mx-auto mb-12">
-            Soy un desarrollador web apasionado por la tecnología, el diseño y
-            la innovación. A lo largo de los años he trabajado en proyectos
-            personales y colaborativos, buscando siempre un equilibrio entre
-            estética, rendimiento y funcionalidad.
-          </p>
+      <section className="pt-20 w-full grid grid-cols-1 gap-10 text-center">
+        {/* Sección sobre mi */}
+        <div className="relative grid grid-cols-2 h-screen">
+          <div className="pt-50">
+            <div>
+              <h1 className="text-4xl font-bold text-violet-200">Sobre Mí</h1>
+            </div>
+            <div className="pt-10">
+              <p className="text-sm text-gray-300 max-w-md mx-auto">
+                Soy desarrollador web, motivado por el aprendizaje continuo, el
+                trabajo en equipo y asumir retos que impulsen el crecimiento
+                personal y profesional.
+              </p>
+              <p className="text-sm text-gray-300 max-w-md mx-auto pt-4">
+                Destaco por mi liderazgo, adaptabilidad y capacidad para resolver
+                problemas de manera creativa y eficiente.
+              </p>
+            </div>
+          </div>
+
+          <div className="pt-20 pl-30 items-center">
+            <img
+              src="assets/img/me-left.png"
+              alt="Me photo"
+              className="p-1 w-80 h-auto bg-neutral-950 rounded-full select-none pointer-events-none drop-shadow-[0_0_25px_rgba(168,85,247,0.3)] border border-fuchsia-950"
+            />
+          </div>
+
+          <Scroll />
         </div>
 
-        <div className="relative w-full overflow-visible pb-500">
+        {/* Sección de formación */}
+        <div className="relative w-full">
+          <h1 className="text-3xl flex items-center justify-center gap-2 mb-8">
+            <IconBooks className="w-7 h-7" />
+            Formación
+          </h1>
           <Timeline data={data} />
         </div>
       </section>
