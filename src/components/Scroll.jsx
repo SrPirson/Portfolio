@@ -6,7 +6,7 @@ const Scroll = () => {
       <img
         src="assets/img/arrow.gif"
         alt="Scroll arrow"
-        className="w-12 h-12 invert brightness-200 rotate-90"
+        className="w-12 h-12 invert brightness-200 rotate-90 scroll-fade-out"
         />
     </div>
   );

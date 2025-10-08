@@ -45,3 +45,24 @@ body {
     animation-range: contain 0% contain 50%;
   }
 }
+
+@keyframes fade-out-down {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-2vh);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .scroll-fade-out {
+    view-timeline-name: --scroll-down;
+    view-timeline-axis: block;
+    animation: fade-out-down both;
+    animation-timeline: --scroll-down;
+    animation-range: contain 0% contain 100%;
+  }
+}
