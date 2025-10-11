@@ -7,6 +7,7 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import { LayoutTextFlip } from "./components/ui/layout-text-flip";
 import { AnimatePresence, motion } from "framer-motion";
+import SwitchMode from "./components/SwitchTheme";
 
 const pageVariants = {
   initial: { opacity: 0, y: 20, filter: "blur(8px)" },
@@ -40,6 +41,10 @@ function AppContent() {
         <div className="mx-auto relative z-10">
           <Navbar />
         </div>
+
+        <div className="fixed top-8 right-0 z-20 px-8 flex items-center">
+          <SwitchMode />
+        </div>
       </div>
 
       {/* Contenido */}
@@ -70,13 +75,12 @@ function AppContent() {
 function App() {
   return (
     <Router>
-      <div className="min-h-screen w-full relative bg-black">
+      <div className="min-h-screen w-full relative bg-bg transition-colors duration-500">
         {/* Fondo Violet Storm */}
         <div
           className="fixed inset-0 z-0"
           style={{
-            background:
-              "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(139, 92, 246, 0.25), transparent 80%), #000000",
+            background: "var(--color-bg-gradient)",
           }}
         />
         <AppContent />

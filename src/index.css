@@ -1,8 +1,61 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Colores por defecto */
+  --color-bg: var(--color-violet-100);
+  --color-bg-gradient: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(139, 92, 246, 0.85), transparent 90%);
+  --color-title: var(--color-violet-800);
+  --color-subtitle: var(--color-violet-600);
+  --color-text: var(--color-gray-700);
+  --color-text-secondary: var(--color-violet-900);
+
+  /* Colores navbar */
+  --color-bg-icon: var(--color-gray-200);
+  --color-icon: var(--color-neutral-600);
+  --color-icon-hover: var(--color-violet-600);
+  --color-icon-select: var(--color-violet-700);
+
+  --color-bg-img: var(--color-violet-200);
+
+  --scrollbar-thumb: #b474c7;
+  --scrollbar-track: #1d0424;
+}
+
+.dark {
+  /* Colores del tema oscuro */
+  --color-bg: var(--color-neutral-950);
+  --color-bg-gradient: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(139, 92, 246, 0.25), transparent 90%);
+  --color-title: var(--color-violet-100);
+  --color-subtitle: var(--color-violet-200);
+  --color-text: var(--color-gray-300);
+  --color-text-secondary: var(--color-violet-400);
+
+  /* Colores navbar */
+  --color-bg-icon: var(--color-neutral-800);
+  --color-icon: var(--color-neutral-400);
+  --color-icon-hover: var(--color-violet-300);
+  --color-icon-select: var(--color-violet-400);
+
+  --color-bg-img: var(--color-neutral-950);
+
+  --scrollbar-thumb: #8c589c;
+  --scrollbar-track: #0d0211;
+}
+
+.theme-transition * {
+  transition:
+    background-color 1s ease-in-out,
+    color 1.5s ease,
+    border-color 1.5s ease,
+    fill 1.5s ease,
+    stroke 1.5s ease;
+}
+
 * {
   scrollbar-width: thin;
-  scrollbar-color: #b474c7 #1d0424;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
 }
 
 *::-webkit-scrollbar {
@@ -10,14 +63,14 @@
 }
 
 *::-webkit-scrollbar-track {
-  background: #1d0424;
+  background: var(--scrollbar-track);
   border-radius: 10px;
 }
 
 *::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #b474c7, #8c589c);
+  background: linear-gradient(180deg, var(--scrollbar-thumb), #8c589c);
   border-radius: 10px;
-  border: 2px solid #1d0424;
+  border: 2px solid var(--scrollbar-track);
   transition: background 0.3s ease;
 }
 
@@ -26,43 +79,46 @@
 }
 
 *::-webkit-scrollbar-corner {
-  background: #1d0424;
+  background: var(--scrollbar-track);
 }
+
 
 body {
   font-family: 'JetBrains Mono', monospace;
 }
 
-.fade-enter {
-    opacity: 0;
-  }
-  .fade-enter-active {
-    opacity: 1;
-    transition: opacity 400ms ease-in-out;
-  }
-  .fade-exit {
-    opacity: 1;
-  }
-  .fade-exit-active {
-    opacity: 0;
-    transition: opacity 400ms ease-in-out;
-  }  
 
-  ::view-transition-old(root),
-  ::view-transition-new(root) {
-    animation: fade 0.4s ease-in-out;
-  }
-  
-  @keyframes fade {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 400ms ease-in-out;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 400ms ease-in-out;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: fade 0.4s ease-in-out;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 
 @keyframes slide-fade-in {
   from {
     opacity: 0;
     transform: translateY(2vh);
-}
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {

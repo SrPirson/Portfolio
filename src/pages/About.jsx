@@ -101,13 +101,12 @@ const About = () => {
             <img
               src="/assets/img/me-left.png"
               alt="Foto personal"
-              className="p-1 w-80 h-auto bg-neutral-950 rounded-full select-none pointer-events-none drop-shadow-[0_0_25px_rgba(168,85,247,0.3)] border border-fuchsia-950"
+              className="p-1 w-80 h-auto bg-bg-img rounded-full select-none pointer-events-none drop-shadow-[0_0_25px_rgba(168,85,247,0.3)] border border-fuchsia-950"
             />
           </div>
+          <Scroll />
         </div>
-
-        <Scroll />
-
+        
         {/* Sección formación */}
         <section className="relative w-full">
           <h1 className="text-3xl flex items-center justify-center gap-2 mb-8">
