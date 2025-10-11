@@ -28,8 +28,8 @@ const Navbar = () => {
             <div
               className={`transition-colors duration-300 ${
                 location.pathname === link.href
-                  ? "text-violet-400"
-                  : "text-neutral-400 hover:text-violet-300"
+                  ? "text-icon-select"
+                  : "text-icon hover:text-icon-hover"
               }`}
             >
               {link.icon}
