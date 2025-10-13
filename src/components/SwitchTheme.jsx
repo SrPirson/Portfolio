@@ -32,12 +32,12 @@ const SwitchTheme = () => {
         onChange={handleCheckboxChange}
         className="sr-only"
       />
-      <div className="shadow-card flex h-[46px] w-[82px] items-center justify-center rounded-2xl bg-white dark:bg-white/5 backdrop-blur-md border border-white/20 transition-colors duration-500">
+      <div className="shadow-card flex h-[46px] w-[82px] items-center justify-center rounded-2xl bg-white/0.1 backdrop-blur-xs border border-black/30 dark:border-white/20 transition-colors duration-500">
         <span
           className={`flex h-9 w-9 items-center justify-center rounded transition-all duration-300 ease-in-out ${
             !isChecked
-              ? "text-violet-400 hover:scale-125 hover:text-violet-500"
-              : "text-violet-200 hover:scale-125 hover:text-violet-300"
+              ? "text-violet-800 dark:text-violet-400 hover:scale-125 hover:text-violet-900 dark:hover:text-violet-500"
+              : "text-violet-500 dark:text-violet-200 hover:scale-125 hover:text-violet-600 dark:hover:text-violet-300"
           }`}
         >
           {/* ☀️ Icono Sol */}
@@ -67,8 +67,8 @@ const SwitchTheme = () => {
         <span
           className={`flex h-9 w-9 items-center justify-center rounded transition-all duration-300 ease-in-out ${
             isChecked
-              ? "text-violet-400 hover:scale-125 hover:text-violet-500"
-              : "text-violet-200 hover:scale-125 hover:text-violet-300"
+              ? "text-violet-800 dark:text-violet-400 hover:scale-125 hover:text-violet-900 dark:hover:text-violet-500"
+              : "text-violet-500 dark:text-violet-200 hover:scale-125 hover:text-violet-600 dark:hover:text-violet-300"
           }`}
         >
           <svg

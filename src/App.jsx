@@ -30,7 +30,7 @@ function AppContent() {
       {/* Navbar */}
       <div className="fixed top-8 left-0 right-0 z-20 px-4 flex items-center">
         {/* Texto animado a la izquierda */}
-        <div className="absolute z-10 text-white pl-20 select-none">
+        <div className="absolute z-10 text-violet-600 dark:text-violet-50 pl-20 select-none left-0">
           <LayoutTextFlip
             text="Pirson "
             words={["Dev", "Programador", "Desarrollador", "Full Stack"]}

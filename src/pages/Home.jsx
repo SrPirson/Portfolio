@@ -47,7 +47,7 @@ const SocialIcon = ({ title, icon, href, download, copyText }) => {
       <motion.div
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.9 }}
-        className="flex items-center justify-center w-14 h-14 rounded-4xl border-2 border-gray-300 dark:border-gray-700 bg-gray-100 dark:bg-black text-gray-400 hover:text-violet-400 transition-colors duration-500"
+        className="flex items-center justify-center w-14 h-14 rounded-4xl border-2 border-gray-400 dark:border-gray-700 bg-gray-100 dark:bg-black text-gray-400 hover:text-violet-400 transition-colors duration-500"
       >
         {icon}
       </motion.div>
@@ -59,7 +59,7 @@ const SocialIcon = ({ title, icon, href, download, copyText }) => {
             animate={{ opacity: 1, y: 6 }}
             exit={{ opacity: 0, y: -5 }}
             transition={{ duration: 0.2 }}
-            className="absolute top-full mt-2 px-2 py-1 text-xs rounded-md bg-gray-100 dark:bg-gray-800 text-neutral-700 dark:text-white shadow-md whitespace-nowrap"
+            className="absolute top-full mt-2 px-2 py-1 text-xs rounded-md bg-gray-100 dark:bg-gray-800 text-neutral-700 dark:text-gray-200 shadow-md whitespace-nowrap"
           >
             {copied ? "¡Copiado!" : title}
           </motion.div>
@@ -72,26 +72,26 @@ const SocialIcon = ({ title, icon, href, download, copyText }) => {
 const Home = () => {
   return (
     <div className="container">
-      <div className=" grid grid-cols-1 md:grid-cols-2 min-h-screen place-items-center px-4">
+      <div className=" grid grid-cols-1 md:grid-cols-2 min-h-screen place-items-center pt-20 md:pt-0 px-4">
         {/* Imagen */}
         <div className="flex justify-center">
           <img
             src="/assets/me-avatar.png"
             alt="Me"
-            className="w-64 h-auto rounded-lg select-none pointer-events-none drop-shadow-[0_0_25px_rgba(168,85,247,0.3)]"
+            className="w-45 md:w-64 h-auto rounded-lg select-none pointer-events-none drop-shadow-[0_0_25px_rgba(168,85,247,0.9)] dark:drop-shadow-[0_0_25px_rgba(168,85,247,0.3)]"
           />
         </div>
 
         {/* Texto y redes */}
         <div className="flex flex-col items-center text-center px-4">
           <section className="mb-6">
-            <h1 className="text-4xl font-bold mb-4 text-title">
+            <h1 className="text-2xl md:text-4xl font-bold mb-4 text-title">
               Francisco Cortés Pirson
             </h1>
-            <h2 className="text-2xl font-bold mb-6">
+            <h2 className="text-xl md:text-2xl font-bold mb-6">
               <span className="text-text-secondary font-extrabold">&lt;<span className="ml-1">&gt;</span></span>{" "}
               <span className="text-subtitle">Programador Web Full Stack</span>{" "}
-              <span className="text-text-secondary font-extrabold">&lt;<span className="mr-1 pl-1">/</span>&gt;</span>
+              <span className="text-text-secondary font-extrabold">&lt;<span className="text-lg md:text-xl mr-1 pl-1">/</span>&gt;</span>
             </h2>
             <p className="text-sm text-text max-w-md mx-auto">
               Siempre explorando nuevas tecnologías y buenas prácticas para
@@ -101,7 +101,7 @@ const Home = () => {
           </section>
 
           {/* Iconos Redes Sociales */}
-          <section className="flex gap-6 mt-4">
+          <section className="flex gap-6 mt-4 pb-10 md:pb-0">
             {socialLinks.map((link) => (
               <SocialIcon key={link.title} {...link} />
             ))}
