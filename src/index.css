@@ -20,7 +20,7 @@
   --color-bg-img: var(--color-violet-200);
 
   --scrollbar-thumb: #b474c7;
-  --scrollbar-track: #1d0424;
+  --scrollbar-track: var(--color-violet-100);
 }
 
 .dark {
@@ -41,7 +41,7 @@
   --color-bg-img: var(--color-neutral-950);
 
   --scrollbar-thumb: #8c589c;
-  --scrollbar-track: #0d0211;
+  --scrollbar-track: var(--color-neutral-950);
 }
 
 .theme-transition * {
@@ -56,6 +56,8 @@
 * {
   scrollbar-width: thin;
   scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  transition: scrollbar-color 0.5s ease-in;
+
 }
 
 *::-webkit-scrollbar {

@@ -3,6 +3,7 @@ import { Timeline } from "../components/ui/timeline";
 import {
   IconBooks,
   IconCertificate,
+  IconCode,
 } from "@tabler/icons-react";
 import Scroll from "/src/components/Scroll";
 
@@ -87,8 +88,8 @@ const About = () => {
           <div className="flex flex-col justify-center items-center gap-6 px-2 md:px-12 text-center">
             <h1 className="text-4xl font-bold text-title">Sobre Mí</h1>
             <p className="text-sm text-text max-w-md">
-              Soy desarrollador web junior, motivado por el aprendizaje continuo, el
-              trabajo en equipo y asumir retos que impulsen el crecimiento
+              Soy desarrollador web junior, en constante aprendizaje, me desenvuelvo 
+              bien en el trabajo en equipo y asumir retos que impulsen el crecimiento
               personal y profesional.
             </p>
             <p className="text-sm text-text max-w-md">
@@ -109,7 +110,7 @@ const About = () => {
         
         {/* Sección formación */}
         <section className="relative w-full">
-          <h1 className="text-3xl flex items-center justify-center gap-2 mb-8 text-title drop-shadow-[0_0_25px_rgba(168,85,247,0.8)]">
+          <h1 className="text-3xl flex items-center justify-center gap-2 mb-8 text-title drop-shadow-[0_0_25px_rgba(168,85,247,0.8)] select-none">
             <IconBooks className="w-7 h-7 text-title drop-shadow-[0_0_25px_rgba(168,85,247,0.8)]" />
             Formación
           </h1>
@@ -118,21 +119,21 @@ const About = () => {
 
         {/* Sección certificados */}
         <section>
-          <h1 className="text-3xl flex items-center justify-center gap-2 mb-15 text-title drop-shadow-[0_0_25px_rgba(168,85,247,0.8)]">
+          <h1 className="text-3xl flex items-center justify-center gap-2 mb-15 text-title drop-shadow-[0_0_25px_rgba(168,85,247,0.8)] select-none">
             <IconCertificate className="w-7 h-7 text-title drop-shadow-[0_0_25px_rgba(168,85,247,0.8)]" />
             Certificados
           </h1>
 
           <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-6 gap-y-15 w-[60%] md:w-[75%] mx-auto">
 
-            <article className="flex flex-col items-center justify-center bg-violet-200/70 dark:bg-neutral-800/40 rounded-2xl w-auto max-h-[220px] px-3 shadow-[5px_5px_10px_#9b61c2,-5px_-5px_10px_#8d5cad] dark:shadow-[2px_2px_10px_#4f0ca3,-2px_-2px_5px_#6b10dd] transition-all duration-300 hover:scale-[1.02] cursor-pointer"
+            <article className="group flex flex-col items-center justify-center bg-violet-200/70 dark:bg-neutral-800/40 rounded-2xl w-auto max-h-[220px] px-3 shadow-[5px_5px_10px_#9b61c2,-5px_-5px_10px_#8d5cad] dark:shadow-[2px_2px_10px_#4f0ca3,-2px_-2px_5px_#6b10dd] transition-all duration-300 hover:scale-[1.01] cursor-pointer"
             onClick={() => window.open("/assets/certificados/pdf/certificado_iniciacion_desarrollo_IA.pdf", "_blank")}
             >
               <div className="relative">
                 <img
                   src="/assets/certificados/img/certificado_iniciacion_desarrollo_IA.jpg"
                   alt="Curso de Iniciación al Desarrollo con IA"
-                  className="w-[200px] object-cover -translate-y-8 shadow-neutral-700/60 dark:shadow-neutral-200/70 shadow-lg rounded-lg blur-[px]"
+                  className="w-[200px] object-cover -translate-y-8 shadow-neutral-700/60 dark:shadow-neutral-200/70 shadow-lg rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:brightness-110"
                 />
               </div>
               <div className="-translate-y-5 text-center">
@@ -145,14 +146,14 @@ const About = () => {
               </div>
             </article>
 
-            <article className="flex flex-col items-center justify-center bg-violet-200/70 dark:bg-neutral-800/40 rounded-2xl w-auto max-h-[220px] px-3 shadow-[5px_5px_10px_#9b61c2,-5px_-5px_10px_#8d5cad] dark:shadow-[2px_2px_10px_#4f0ca3,-2px_-2px_5px_#6b10dd] transition-all duration-300 hover:scale-[1.02] cursor-pointer"
+            <article className="group flex flex-col items-center justify-center bg-violet-200/70 dark:bg-neutral-800/40 rounded-2xl w-auto max-h-[220px] px-3 shadow-[5px_5px_10px_#9b61c2,-5px_-5px_10px_#8d5cad] dark:shadow-[2px_2px_10px_#4f0ca3,-2px_-2px_5px_#6b10dd] transition-all duration-300 hover:scale-[1.01] cursor-pointer"
             onClick={() => window.open("/assets/certificados/pdf/certificado_tailwind_css.pdf", "_blank")}
             >
               <div className="relative">
                 <img
                   src="/assets/certificados/img/certificado_tailwind_css.jpg"
                   alt="Tailwind CSS"
-                  className="w-[200px] object-cover -translate-y-8 shadow-neutral-700/60 dark:shadow-neutral-200/70 shadow-lg rounded-lg"
+                  className="w-[200px] object-cover -translate-y-8 shadow-neutral-700/60 dark:shadow-neutral-200/70 shadow-lg rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:brightness-110"
                 />
               </div>
               <div className="-translate-y-5 text-center">
@@ -165,14 +166,14 @@ const About = () => {
               </div>
             </article>
 
-            <article className="flex flex-col items-center justify-center bg-violet-200/70 dark:bg-neutral-800/40 rounded-2xl w-auto max-h-[220px] px-3 shadow-[5px_5px_10px_#9b61c2,-5px_-5px_10px_#8d5cad] dark:shadow-[2px_2px_10px_#4f0ca3,-2px_-2px_5px_#6b10dd] transition-all duration-300 hover:scale-[1.02] cursor-pointer"
+            <article className="group flex flex-col items-center justify-center bg-violet-200/70 dark:bg-neutral-800/40 rounded-2xl w-auto max-h-[220px] px-3 shadow-[5px_5px_10px_#9b61c2,-5px_-5px_10px_#8d5cad] dark:shadow-[2px_2px_10px_#4f0ca3,-2px_-2px_5px_#6b10dd] transition-all duration-300 hover:scale-[1.01] cursor-pointer"
             onClick={() => window.open("/assets/certificados/pdf/certificado_creación_y_testing_de_apis_con_node.js_y_express.pdf", "_blank")}
             >
               <div className="relative">
                 <img
                   src="/assets/certificados/img/certificado_creación_y_testing_de_apis_con_node.js_y_express.jpg"
                   alt="Certificado Node.js y Express"
-                  className="w-[200px] object-cover -translate-y-8 shadow-neutral-700/60 dark:shadow-neutral-200/70 shadow-lg rounded-lg"
+                  className="w-[200px] object-cover -translate-y-8 shadow-neutral-700/60 dark:shadow-neutral-200/70 shadow-lg rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:brightness-110"
                 />
               </div>
               <div className="-translate-y-5 text-center">
@@ -185,14 +186,14 @@ const About = () => {
               </div>
             </article>
 
-            <article className="flex flex-col items-center justify-center bg-violet-200/70 dark:bg-neutral-800/40 rounded-2xl w-auto max-h-[220px] px-3 shadow-[5px_5px_10px_#9b61c2,-5px_-5px_10px_#8d5cad] dark:shadow-[2px_2px_10px_#4f0ca3,-2px_-2px_5px_#6b10dd] transition-all duration-300 hover:scale-[1.02] cursor-pointer"
+            <article className="group flex flex-col items-center justify-center bg-violet-200/70 dark:bg-neutral-800/40 rounded-2xl w-auto max-h-[220px] px-3 shadow-[5px_5px_10px_#9b61c2,-5px_-5px_10px_#8d5cad] dark:shadow-[2px_2px_10px_#4f0ca3,-2px_-2px_5px_#6b10dd] transition-all duration-300 hover:scale-[1.01] cursor-pointer"
             onClick={() => window.open("/assets/certificados/pdf/certificado_desarrollo_de_aplicaciones_web_con_nodejs_y_express.pdf", "_blank")}
             >
               <div className="relative">
                 <img
                   src="/assets/certificados/img/certificado_desarrollo_de_aplicaciones_web_con_nodejs_y_express.jpg"
                   alt="Desarrollo de aplicaciones web con NodeJS y Express"
-                  className="w-[200px] object-cover -translate-y-8 shadow-neutral-700/60 dark:shadow-neutral-200/70 shadow-lg rounded-lg"
+                  className="w-[200px] object-cover -translate-y-8 shadow-neutral-700/60 dark:shadow-neutral-200/70 shadow-lg rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:brightness-110"
                 />
               </div>
               <div className="-translate-y-5 text-center">
@@ -205,14 +206,14 @@ const About = () => {
               </div>
             </article>
 
-            <article className="flex flex-col items-center justify-center bg-violet-200/70 dark:bg-neutral-800/40 rounded-2xl w-auto max-h-[220px] px-3 shadow-[5px_5px_10px_#9b61c2,-5px_-5px_10px_#8d5cad] dark:shadow-[2px_2px_10px_#4f0ca3,-2px_-2px_5px_#6b10dd] transition-all duration-300 hover:scale-[1.02] cursor-pointer"
+            <article className="group flex flex-col items-center justify-center bg-violet-200/70 dark:bg-neutral-800/40 rounded-2xl w-auto max-h-[220px] px-3 shadow-[5px_5px_10px_#9b61c2,-5px_-5px_10px_#8d5cad] dark:shadow-[2px_2px_10px_#4f0ca3,-2px_-2px_5px_#6b10dd] transition-all duration-300 hover:scale-[1.01] cursor-pointer"
             onClick={() => window.open("/assets/certificados/pdf/certificado_fundamentos_de_reactcertificado_fundamentos_de_react.pdf", "_blank")}
             >
               <div className="relative">
                 <img
                   src="/assets/certificados/img/certificado_fundamentos_de_react.jpg"
                   alt="Fundamentos de React"
-                  className="w-[200px] object-cover -translate-y-8 shadow-neutral-700/60 dark:shadow-neutral-200/70 shadow-lg rounded-lg"
+                  className="w-[200px] object-cover -translate-y-8 shadow-neutral-700/60 dark:shadow-neutral-200/70 shadow-lg rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:brightness-110"
                 />
               </div>
               <div className="-translate-y-5 text-center">
@@ -225,14 +226,14 @@ const About = () => {
               </div>
             </article>
 
-            <article className="flex flex-col items-center justify-center bg-violet-200/70 dark:bg-neutral-800/40 rounded-2xl w-auto max-h-[220px] px-3 shadow-[5px_5px_10px_#9b61c2,-5px_-5px_10px_#8d5cad] dark:shadow-[2px_2px_10px_#4f0ca3,-2px_-2px_5px_#6b10dd] transition-all duration-300 hover:scale-[1.02] cursor-pointer"
+            <article className="group flex flex-col items-center justify-center bg-violet-200/70 dark:bg-neutral-800/40 rounded-2xl w-auto max-h-[220px] px-3 shadow-[5px_5px_10px_#9b61c2,-5px_-5px_10px_#8d5cad] dark:shadow-[2px_2px_10px_#4f0ca3,-2px_-2px_5px_#6b10dd] transition-all duration-300 hover:scale-[1.01] cursor-pointer"
             onClick={() => window.open("/assets/certificados/pdf/certificado_curso_de_jquery.pdf", "_blank")}
             >
               <div className="relative">
                 <img
                   src="/assets/certificados/img/certificado_curso_de_jquery.jpg"
                   alt="Certificado Node.js y Express"
-                  className="w-[200px] object-cover -translate-y-8 shadow-neutral-700/60 dark:shadow-neutral-200/70 shadow-lg rounded-lg"
+                  className="w-[200px] object-cover -translate-y-8 shadow-neutral-700/60 dark:shadow-neutral-200/70 shadow-lg rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:brightness-110"
                 />
               </div>
               <div className="-translate-y-5 text-center">
@@ -245,6 +246,14 @@ const About = () => {
               </div>
             </article>
           </section>
+        </section>
+
+        {/* Sección certificados */}
+        <section>
+          <h1 className="text-3xl flex items-center justify-center gap-2 mb-15 text-title drop-shadow-[0_0_25px_rgba(168,85,247,0.8)] select-none">
+            <IconCode className="w-7 h-7 text-title drop-shadow-[0_0_25px_rgba(168,85,247,0.8)]" />
+            Certificados
+          </h1>
         </section>
 
       </section>
