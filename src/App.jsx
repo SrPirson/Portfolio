@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import { LayoutTextFlip } from "./components/ui/layout-text-flip";
 import { AnimatePresence, motion } from "framer-motion";
 import SwitchMode from "./components/SwitchTheme";
+import ThemeSwitcher from "./components/ThemeSwitcher";
 
 const pageVariants = {
   initial: { opacity: 0, y: 20, filter: "blur(8px)" },
@@ -28,9 +29,9 @@ function AppContent() {
   return (
     <>
       {/* Navbar */}
-      <div className="fixed top-8 left-0 right-0 z-20 px-4 flex items-center">
+      <div className="fixed top-8 left-0 right-0 z-20 px-8 flex items-center justify-between">
         {/* Texto animado a la izquierda */}
-        <div className="absolute z-10 text-violet-600 dark:text-violet-50 pl-20 select-none left-0">
+        <div className="text-violet-600 dark:text-violet-50 select-none">
           <LayoutTextFlip
             text="Pirson "
             words={["Dev", "Programador", "Desarrollador", "Full Stack"]}
@@ -38,14 +39,16 @@ function AppContent() {
         </div>
 
         {/* Navbar centrado */}
-        <div className="mx-auto relative z-10">
+        <div className="absolute left-1/2 transform -translate-x-1/2 z-10">
           <Navbar />
         </div>
 
-        <div className="fixed top-8 right-0 z-20 px-8 flex items-center">
-          <SwitchMode />
+        {/* Botón de tema a la derecha */}
+        <div className="flex items-center">
+          <ThemeSwitcher />
         </div>
       </div>
+
 
       {/* Contenido */}
       <div className="container mx-auto px-4 relative z-0 text-white">

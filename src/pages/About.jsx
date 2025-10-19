@@ -252,7 +252,7 @@ const About = () => {
         <section>
           <h1 className="text-3xl flex items-center justify-center gap-2 mb-15 text-title drop-shadow-[0_0_25px_rgba(168,85,247,0.8)] select-none">
             <IconCode className="w-7 h-7 text-title drop-shadow-[0_0_25px_rgba(168,85,247,0.8)]" />
-            Certificados
+            Habilidades
           </h1>
         </section>
 
