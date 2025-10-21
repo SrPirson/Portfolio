@@ -1,6 +1,6 @@
 {
     "app": {
-      "brand_name": "Pirson",
+      "name": "Pirson ",
       "animated_titles": ["Dev", "Programmeur", "Développeur", "Full Stack"]
     },
     "navbar": {

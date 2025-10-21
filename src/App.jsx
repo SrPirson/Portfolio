@@ -9,6 +9,7 @@ import { LayoutTextFlip } from "./components/ui/layout-text-flip";
 import { AnimatePresence, motion } from "framer-motion";
 import ThemeSwitcher from "./components/ThemeSwitcher";
 import LangSwitcher from "./components/LangSwitcher";
+import { useTranslation } from "react-i18next";
 
 const pageVariants = {
   initial: { opacity: 0, y: 20, filter: "blur(8px)" },
@@ -23,9 +24,11 @@ const pageTransition = {
   duration: 0.1,
 };
 
+
+
 function AppContent() {
   const location = useLocation();
-
+  const [t, i18n] = useTranslation("global");
   return (
     <>
       {/* Navbar */}
@@ -33,8 +36,8 @@ function AppContent() {
         {/* Texto animado a la izquierda */}
         <div className="text-violet-600 dark:text-violet-50 select-none">
           <LayoutTextFlip
-            text="Pirson "
-            words={["Dev", "Programador", "Desarrollador", "Full Stack"]}
+            text={t("app.name")}
+            words={t("app.animated_titles", { returnObjects: true })}
           />
         </div>
 
