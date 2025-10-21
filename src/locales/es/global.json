@@ -1,0 +1,85 @@
+{
+    "app": {
+      "brand_name": "Pirson",
+      "animated_titles": ["Dev", "Programador", "Desarrollador", "Full Stack"]
+    },
+    "navbar": {
+      "home": "Inicio",
+      "about": "Sobre Mí",
+      "projects": "Proyectos",
+      "contact": "Contacto"
+    },
+    "home": {
+      "title": "Francisco Cortés Pirson",
+      "subtitle": "Programador Web Full Stack",
+      "description": "Siempre explorando nuevas tecnologías y buenas prácticas para transformar ideas en soluciones web completas, funcionales y de alto rendimiento.",
+      "copied": "¡Copiado!",
+      "social": {
+        "github": "GitHub",
+        "linkedin": "LinkedIn",
+        "email": "Copiar Email",
+        "whatsapp": "WhatsApp",
+        "cv": "Descargar CV"
+      }
+    },
+    "about": {
+      "title": "Sobre Mí",
+      "description_1": "Soy desarrollador web junior, en constante aprendizaje, me desenvuelvo bien en el trabajo en equipo y asumir retos que impulsen el crecimiento personal y profesional.",
+      "description_2": "Destaco por mi liderazgo, adaptabilidad y capacidad para resolver problemas de manera creativa y eficiente.",
+      "sections": {
+        "education": "Formación",
+        "certificates": "Certificados",
+        "skills": "Habilidades"
+      },
+      "education": [
+        {
+          "year": "2025",
+          "title": "Bootcamp Full Stack Java",
+          "school": "Esplai Formación"
+        },
+        {
+          "year": "2023",
+          "title": "Técnico Superior en Desarrollo de Aplicaciones Web",
+          "school": "MEDAC"
+        },
+        {
+          "year": "2018",
+          "title": "Técnico en Sistemas Microinformáticos y Redes",
+          "school": "I.E.S Belén"
+        }
+      ],
+      "certificates": [
+        {
+          "title": "Curso de Iniciación al Desarrollo con IA",
+          "school": "BIG school",
+          "date": "Octubre 2025"
+        },
+        {
+          "title": "Tailwind CSS",
+          "school": "OpenWebinars",
+          "date": "Julio 2025"
+        },
+        {
+          "title": "Creación y testing de APIs con Node.js y Express",
+          "school": "OpenWebinars",
+          "date": "Abril 2025"
+        },
+        {
+          "title": "Desarrollo de aplicaciones web con NodeJS y Express",
+          "school": "OpenWebinars",
+          "date": "Marzo 2025"
+        },
+        {
+          "title": "Fundamentos de React",
+          "school": "OpenWebinars",
+          "date": "Marzo 2025"
+        },
+        {
+          "title": "Curso de jQuery",
+          "school": "OpenWebinars",
+          "date": "Enero 2025"
+        }
+      ]
+    }
+  }
+  

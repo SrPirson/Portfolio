@@ -7,8 +7,8 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import { LayoutTextFlip } from "./components/ui/layout-text-flip";
 import { AnimatePresence, motion } from "framer-motion";
-import SwitchMode from "./components/SwitchTheme";
 import ThemeSwitcher from "./components/ThemeSwitcher";
+import LangSwitcher from "./components/LangSwitcher";
 
 const pageVariants = {
   initial: { opacity: 0, y: 20, filter: "blur(8px)" },
@@ -38,14 +38,23 @@ function AppContent() {
           />
         </div>
 
+        {/*
+          const { t } = useTranslation();
+          <LayoutTextFlip
+            text={t("app.brand_name")}
+            words={t("app.animated_titles", { returnObjects: true })}
+          />
+        */}
+
         {/* Navbar centrado */}
         <div className="absolute left-1/2 transform -translate-x-1/2 z-10">
           <Navbar />
         </div>
 
         {/* Botón de tema a la derecha */}
-        <div className="flex items-center">
+        <div className="flex items-center gap-2">
           <ThemeSwitcher />
+          <LangSwitcher />
         </div>
       </div>
 
