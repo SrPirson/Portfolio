@@ -35,51 +35,68 @@
         {
           "year": "2025",
           "title": "Bootcamp Full Stack Java",
-          "school": "Esplai Formación"
+          "school": "Esplai Formación",
+          "src": "/assets/img/logo-FE.png",
+          "alt": "Logo Esplai"
         },
         {
           "year": "2023",
           "title": "Técnico Superior en Desarrollo de Aplicaciones Web",
-          "school": "MEDAC"
+          "school": "MEDAC",
+          "src": "/assets/img/logo-Medac.png",
+          "alt": "Logo MEDAC"
         },
         {
           "year": "2018",
           "title": "Técnico en Sistemas Microinformáticos y Redes",
-          "school": "I.E.S Belén"
+          "school": "I.E.S Belén",
+          "src": "/assets/img/logo-Belen.png",
+          "alt": "Logo IES Belén"
         }
       ],
       "certificates": [
         {
           "title": "Curso de Iniciación al Desarrollo con IA",
           "school": "BIG school",
-          "date": "Octubre 2025"
+          "date": "Octubre 2025",
+          "src": "/assets/certificados/img/certificado_iniciacion_desarrollo_IA.jpg"
         },
         {
           "title": "Tailwind CSS",
           "school": "OpenWebinars",
-          "date": "Julio 2025"
+          "date": "Julio 2025",
+          "src": "/assets/certificados/img/certificado_tailwind_css.jpg"
         },
         {
           "title": "Creación y testing de APIs con Node.js y Express",
           "school": "OpenWebinars",
-          "date": "Abril 2025"
+          "date": "Abril 2025",
+          "src": "/assets/certificados/img/certificado_creación_y_testing_de_apis_con_node.js_y_express.jpg"
         },
         {
           "title": "Desarrollo de aplicaciones web con NodeJS y Express",
           "school": "OpenWebinars",
-          "date": "Marzo 2025"
+          "date": "Marzo 2025",
+          "src": "/assets/certificados/img/certificado_desarrollo_de_aplicaciones_web_con_nodejs_y_express.jpg"
         },
         {
           "title": "Fundamentos de React",
           "school": "OpenWebinars",
-          "date": "Marzo 2025"
+          "date": "Marzo 2025",
+          "src": "/assets/certificados/img/certificado_fundamentos_de_react.jpg"
         },
         {
           "title": "Curso de jQuery",
           "school": "OpenWebinars",
-          "date": "Enero 2025"
+          "date": "Enero 2025",
+          "src": "/assets/certificados/img/certificado_curso_de_jquery.jpg"
         }
       ]
+    },
+    "routes": {
+      "about-me": "/sobre-mi",
+      "projects": "/proyectos",
+      "contact": "/contacto"
     }
   }
   

@@ -28,7 +28,7 @@ const pageTransition = {
 
 function AppContent() {
   const location = useLocation();
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
   return (
     <>
       {/* Navbar */}
@@ -40,14 +40,6 @@ function AppContent() {
             words={t("app.animated_titles", { returnObjects: true })}
           />
         </div>
-
-        {/*
-          const { t } = useTranslation();
-          <LayoutTextFlip
-            text={t("app.brand_name")}
-            words={t("app.animated_titles", { returnObjects: true })}
-          />
-        */}
 
         {/* Navbar centrado */}
         <div className="absolute left-1/2 transform -translate-x-1/2 z-10">
@@ -76,9 +68,9 @@ function AppContent() {
           >
             <Routes location={location}>
               <Route path="/" element={<Home />} />
-              <Route path="/about-me" element={<About />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/contact" element={<Contact />} />
+              <Route path={t("routes.about-me")} element={<About />} />
+              <Route path={t("routes.projects")} element={<Projects />} />
+              <Route path={t("routes.contact")} element={<Contact />} />
             </Routes>
           </motion.div>
         </AnimatePresence>

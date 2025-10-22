@@ -7,16 +7,18 @@ import {
   IconDeviceDesktopCode,
   IconAddressBook,
 } from "@tabler/icons-react";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+  const [t] = useTranslation("global");
   const navigate = useNavigate();
   const location = useLocation();
-
+  console.log(navigator.language);
   const links = [
-    { title: "Inicio", icon: <IconHome className="h-full w-full" />, href: "/" },
-    { title: "Sobre Mí", icon: <IconUser className="h-full w-full" />, href: "/about-me" },
-    { title: "Proyectos", icon: <IconDeviceDesktopCode className="h-full w-full" />, href: "/projects" },
-    { title: "Contacto", icon: <IconAddressBook className="h-full w-full" />, href: "/contact" },
+    { title: t("navbar.home"), icon: <IconHome className="h-full w-full" />, href: "/" },
+    { title: t("navbar.about"), icon: <IconUser className="h-full w-full" />, href: t("routes.about-me") },
+    { title: t("navbar.projects"), icon: <IconDeviceDesktopCode className="h-full w-full" />, href: t("routes.projects") },
+    { title: t("navbar.contact"), icon: <IconAddressBook className="h-full w-full" />, href: t("routes.contact") },
   ];
 
   return (
