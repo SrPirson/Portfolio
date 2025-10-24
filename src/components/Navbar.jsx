@@ -13,7 +13,6 @@ const Navbar = () => {
   const [t] = useTranslation("global");
   const navigate = useNavigate();
   const location = useLocation();
-  console.log(navigator.language);
   const links = [
     { title: t("navbar.home"), icon: <IconHome className="h-full w-full" />, href: "/" },
     { title: t("navbar.about"), icon: <IconUser className="h-full w-full" />, href: t("routes.about-me") },

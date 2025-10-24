@@ -91,6 +91,79 @@
           "date": "Enero 2025",
           "src": "/assets/certificados/img/certificado_curso_de_jquery.jpg"
         }
+      ],
+      "skills": [
+        {
+          "category": "Frontend",
+          "languages": [
+            { "name": "HTML", "src": "/assets/svg/html.svg" },
+            { "name": "CSS", "src": "/assets/svg/css.svg" },
+            { "name": "JavaScript", "src": "/assets/svg/javascript.svg" },
+            { "name": "TypeScript", "src": "/assets/svg/typescript.svg" },
+            { "name": "XML", "src": "/assets/svg/xml.svg" }
+          ],
+          "frameworks": [
+            { "name": "React", "src": "/assets/svg/react.svg" },
+            { "name": "Bootstrap", "src": "/assets/svg/bootstrap.svg" },
+            { "name": "Tailwind CSS", "src": "/assets/svg/tailwind.svg" },
+            { "name": "jQuery", "src": "/assets/svg/jquery.svg" },
+            { "name": "Pug", "src": "/assets/svg/pug.svg" }
+          ],
+          "cms": [
+            { "name": "WordPress", "src": "/assets/svg/wordpress.svg" },
+            { "name": "Joomla", "src": "/assets/svg/joomla.svg" },
+            { "name": "PrestaShop", "src": "/assets/svg/prestashop.svg" },
+            { "name": "Shopify", "src": "/assets/svg/shopify.svg" }
+          ]
+        },
+        {
+          "category": "Backend",
+          "languages": [
+            { "name": "PHP", "src": "/assets/svg/php.svg" },
+            { "name": "Java", "src": "/assets/svg/java.svg" },
+            { "name": "Python", "src": "/assets/svg/python.svg" },
+            { "name": "Node.js", "src": "/assets/svg/nodejs.svg" }
+          ],
+          "frameworks": [
+            { "name": "Laravel", "src": "/assets/svg/laravel.svg" }
+          ],
+          "servers": [
+            { "name": "Apache", "src": "/assets/svg/apache.svg" },
+            { "name": "Tomcat", "src": "/assets/svg/tomcat.svg" },
+            { "name": "XAMPP", "src": "/assets/svg/xampp.svg" }
+          ]
+        },
+        {
+          "category": "Bases de Datos",
+          "databases": [
+            { "name": "MySQL", "src": "/assets/svg/mysql.svg" },
+            { "name": "PostgreSQL", "src": "/assets/svg/postgresql.svg" },
+            { "name": "SQLite", "src": "/assets/svg/sqlite.svg" }
+          ],
+          "tools": [
+            { "name": "phpMyAdmin", "src": "/assets/svg/phpmyadmin.svg" }
+          ]
+        },
+        {
+          "category": "Herramientas y Control de Versiones",
+          "tools": [
+            { "name": "Git", "src": "/assets/svg/git.svg" },
+            { "name": "Bash", "src": "/assets/svg/bash.svg" }
+          ],
+          "devTools": [
+            { "name": "XAMPP", "src": "/assets/svg/xampp.svg" }
+          ]
+        },
+        {
+          "category": "Otros Conocimientos",
+          "concepts": [
+            { "name": "XML", "src": "/assets/svg/xml.svg" }
+          ],
+          "design": [
+            { "name": "Bootstrap", "src": "/assets/svg/bootstrap.svg" },
+            { "name": "Tailwind CSS", "src": "/assets/svg/tailwind.svg" }
+          ]
+        }
       ]
     },
     "routes": {
