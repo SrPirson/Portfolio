@@ -11,6 +11,7 @@ import { useTranslation } from "react-i18next";
 
 const About = () => {
   const [t] = useTranslation("global");
+  
   const formacion = t("about.education", { returnObjects: true }).map((item) => ({
   title: item.year,
   content: (
@@ -27,6 +28,15 @@ const About = () => {
     </div>
   ),
 }));
+
+const paco = t("about.skills", { returnObjects: true });
+console.log(paco);
+
+paco.map((cert, index) => {
+  console.log(cert);
+  console.log(index);
+  
+});
 
   return (
     <section className="container mx-auto px-4 relative">
@@ -108,6 +118,9 @@ const About = () => {
             <IconCode className="w-7 h-7 text-title drop-shadow-[0_0_25px_rgba(168,85,247,0.8)]" />
             {t("about.sections.skills")}
           </h1>
+          <article>
+
+          </article>
         </section>
 
       </section>
