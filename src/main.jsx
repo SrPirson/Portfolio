@@ -12,6 +12,8 @@ import global_fr from "./locales/fr/global.json";
 
 // Detectar idioma del navegador y escoger los dos primeros caracteres
 const browserLang = navigator.language.slice(0, 2);
+console.log(navigator.language);
+
 
 // Recuperar último idioma seleccionado si existe
 const savedLang = localStorage.getItem("i18nextLng");

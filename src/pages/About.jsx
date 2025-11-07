@@ -29,15 +29,6 @@ const About = () => {
   ),
 }));
 
-const paco = t("about.skills", { returnObjects: true });
-console.log(paco);
-
-paco.map((cert, index) => {
-  console.log(cert);
-  console.log(index);
-  
-});
-
   return (
     <section className="container mx-auto px-4 relative">
       <section className="pt-20 w-full grid grid-cols-1 gap-20 text-center">
