@@ -16,7 +16,7 @@ console.log(navigator.language);
 
 
 // Recuperar último idioma seleccionado si existe
-const savedLang = localStorage.getItem("i18nextLng");
+const savedLang = localStorage.getItem("lang");
 
 let defaultLang;
 
@@ -40,7 +40,7 @@ i18next.init({
 
 // Escuchar cambios de idioma y guardar en localStorage
 i18next.on("languageChanged", (lng) => {
-  localStorage.setItem("i18nextLng", lng);
+  localStorage.setItem("lang", lng);
 });
 
 createRoot(document.getElementById('root')).render(
