@@ -31,6 +31,8 @@
         "certificates": "Certificates",
         "skills": "Skills"
       },
+      "button_certificates_more": "Show more",
+      "button_certificates_less": "Show less",
       "education": [
         {
           "year": "2025",
@@ -55,6 +57,12 @@
         }
       ],
       "certificates": [
+        {
+          "title": "Microsoft Certified Azure Fundamentals",
+          "school": "Microsoft",
+          "date": "November 2025",
+          "src": "/assets/certificados/img/certificado_azure_fundamentals.jpg"
+        },
         {
           "title": "Introduction to Development with AI",
           "school": "BIG school",
