@@ -33,6 +33,25 @@ const About = () => {
   const certificates = t("about.certificates", { returnObjects: true });
   const visibleCerts = showAll ? certificates : certificates.slice(0, 6);
 
+  const skills = t("about.skills", { returnObjects: true });
+  const skillsFront = skills.find(skills => skills.category === "Frontend");
+  const skillsBack = skills.find(skills => skills.category === "Backend");
+  const skillsDB = skills.find(skill =>
+    skill.category === "Bases de Datos" ||
+    skill.category === "Databases" ||
+    skill.category === "Bases de données"
+  );
+  const skillsTools = skills.find(skills => 
+    skills.category === "Control de Versiones" ||
+    skills.category === "Version Control" ||
+    skills.category === "Contrôle des versions"
+  );
+
+
+  console.log("Front: ", skillsFront.languages.map(lang => lang.name));
+  console.log("Front: ", skillsFront.languages[1]);
+  console.log("Front: ", skillsFront.category);
+
   return (
     <section className="container mx-auto px-4 relative">
       <section className="pt-20 w-full grid grid-cols-1 gap-20 text-center">
@@ -126,9 +145,112 @@ const About = () => {
             <IconCode className="w-7 h-7 text-title drop-shadow-[0_0_25px_rgba(168,85,247,0.8)]" />
             {t("about.sections.skills")}
           </h1>
-          <article>
-            {/* Contenido de habilidades */}
-          </article>
+
+          <div className="flex justify-around pb-5">
+            {/* FrontEnd */}
+              <article>
+                <h3 className="text-2xl font-bold"> { skillsFront.category } </h3>
+
+                <div className="flex justify-center gap-4 mt-4">
+                  {skillsFront?.languages?.map(lang => (
+                    <div key={lang.name} className="flex flex-col items-center">
+                      <img src={lang.src} alt={lang.name} className="w-12" />
+                      <span className="text-sm mt-2">{lang.name}</span>
+                    </div>
+                  ))}
+                </div>
+                <div className="flex justify-center gap-4 mt-4">
+                  {skillsFront?.frameworks?.map(lang => (
+                    <div key={lang.name} className="flex flex-col items-center">
+                      <img src={lang.src} alt={lang.name} className="w-12" />
+                      <span className="text-sm mt-2">{lang.name}</span>
+                    </div>
+                  ))}
+                </div>
+                <div className="flex justify-center gap-4 mt-4">
+                  {skillsFront?.cms?.map(lang => (
+                    <div key={lang.name} className="flex flex-col items-center">
+                      <img src={lang.src} alt={lang.name} className="w-12" />
+                      <span className="text-sm mt-2">{lang.name}</span>
+                    </div>
+                  ))}
+                </div>
+              </article>
+            
+
+            {/* BackEnd */}
+            <article>
+              <div>
+                <h3 className="text-2xl">{ skillsBack?.category }</h3>
+
+                <div className="flex justify-center gap-4 mt-4">
+                  {skillsBack?.languages?.map(lang => (
+                    <div key={lang.name} className="flex flex-col items-center">
+                      <img src={lang.src} alt={lang.name} className="w-12" />
+                      <span className="text-sm mt-2">{lang.name}</span>
+                    </div>
+                  ))}
+                </div>
+                <div className="flex justify-center gap-4 mt-4">
+                  {skillsBack?.servers?.map(lang => (
+                    <div key={lang.name} className="flex flex-col items-center">
+                      <img src={lang.src} alt={lang.name} className="w-12" />
+                      <span className="text-sm mt-2">{lang.name}</span>
+                    </div>
+                  ))}
+                </div>
+                <div className="flex justify-center gap-4 mt-4">
+                  {skillsBack?.frameworks?.map(lang => (
+                    <div key={lang.name} className="flex flex-col items-center">
+                      <img src={lang.src} alt={lang.name} className="w-12" />
+                      <span className="text-sm mt-2">{lang.name}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div className="flex justify-around">
+            {/* BBDD */}
+              <article>
+                <div>
+                  <h3 className="text-2xl">{ skillsDB.category }</h3>
+
+                  <div className="flex justify-center gap-4 mt-4">
+                  {skillsDB?.databases?.map(lang => (
+                    <div key={lang.name} className="flex flex-col items-center">
+                      <img src={lang.src} alt={lang.name} className="w-12" />
+                      <span className="text-sm mt-2">{lang.name}</span>
+                    </div>
+                  ))}
+                  </div>
+                  <div className="flex justify-center gap-4 mt-4">
+                    {skillsDB?.tools?.map(lang => (
+                      <div key={lang.name} className="flex flex-col items-center">
+                        <img src={lang.src} alt={lang.name} className="w-12" />
+                        <span className="text-sm mt-2">{lang.name}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </article>
+              
+            {/* Herramientas */}
+            <article>
+              <div>
+                <h3 className="text-2xl">{ skillsTools.category }</h3>
+                <div className="flex justify-center gap-4 mt-4">
+                  {skillsTools?.tools?.map(lang => (
+                    <div key={lang.name} className="flex flex-col items-center">
+                      <img src={lang.src} alt={lang.name} className="w-12" />
+                      <span className="text-sm mt-2">{lang.name}</span>
+                    </div>
+                  ))}
+                  </div>
+              </div>
+            </article>
+          </div>
         </section>
 
       </section>

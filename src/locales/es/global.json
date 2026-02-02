@@ -36,7 +36,7 @@
       "education": [
         {
           "year": "2025",
-          "title": "Bootcamp Full Stack Java",
+          "title": "Bootcamp Full-Stack Java, Spring Boot, React y SQL",
           "school": "Esplai Formación",
           "src": "/assets/img/logo-FE.png",
           "alt": "Logo Esplai"
@@ -57,6 +57,18 @@
         }
       ],
       "certificates": [
+        {
+          "title": "Bootcamp Full-Stack Java, Spring Boot, React y SQL",
+          "school": "Microsoft",
+          "date": "Diciembre 2025",
+          "src": "/assets/certificados/img/certificado_bootcamp_fullstack_fundacion_esplai.jpg"
+        },
+        {
+          "title": "Microsoft Certified Azure AI Fundamentals",
+          "school": "Microsoft",
+          "date": "Diciembre 2025",
+          "src": "/assets/certificados/img/certificado_azure_ia_fundamentals.jpg"
+        },
         {
           "title": "Microsoft Certified Azure Fundamentals",
           "school": "Microsoft",
@@ -153,23 +165,11 @@
           ]
         },
         {
-          "category": "Herramientas y Control de Versiones",
+          "category": "Control de Versiones",
           "tools": [
             { "name": "Git", "src": "/assets/svg/git.svg" },
-            { "name": "Bash", "src": "/assets/svg/bash.svg" }
-          ],
-          "devTools": [
-            { "name": "XAMPP", "src": "/assets/svg/xampp.svg" }
-          ]
-        },
-        {
-          "category": "Otros Conocimientos",
-          "concepts": [
-            { "name": "XML", "src": "/assets/svg/xml.svg" }
-          ],
-          "design": [
-            { "name": "Bootstrap", "src": "/assets/svg/bootstrap.svg" },
-            { "name": "Tailwind CSS", "src": "/assets/svg/tailwind.svg" }
+            { "name": "GitHub", "src": "/assets/svg/github.svg" },
+            { "name": "GitLab", "src": "/assets/svg/gitlab.svg" }
           ]
         }
       ]
