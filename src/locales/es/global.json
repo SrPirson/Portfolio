@@ -59,7 +59,7 @@
       "certificates": [
         {
           "title": "Bootcamp Full-Stack Java, Spring Boot, React y SQL",
-          "school": "Microsoft",
+          "school": "Fundación Esplai",
           "date": "Diciembre 2025",
           "src": "/assets/certificados/img/certificado_bootcamp_fullstack_fundacion_esplai.jpg"
         },
@@ -115,61 +115,101 @@
       "skills": [
         {
           "category": "Frontend",
-          "languages": [
-            { "name": "HTML", "src": "/assets/svg/html.svg" },
-            { "name": "CSS", "src": "/assets/svg/css.svg" },
-            { "name": "JavaScript", "src": "/assets/svg/javascript.svg" },
-            { "name": "TypeScript", "src": "/assets/svg/typescript.svg" },
-            { "name": "XML", "src": "/assets/svg/xml.svg" }
-          ],
-          "frameworks": [
-            { "name": "React", "src": "/assets/svg/react.svg" },
-            { "name": "Bootstrap", "src": "/assets/svg/bootstrap.svg" },
-            { "name": "Tailwind CSS", "src": "/assets/svg/tailwind.svg" },
-            { "name": "jQuery", "src": "/assets/svg/jquery.svg" },
-            { "name": "Pug", "src": "/assets/svg/pug.svg" }
-          ],
-          "cms": [
-            { "name": "WordPress", "src": "/assets/svg/wordpress.svg" },
-            { "name": "Joomla", "src": "/assets/svg/joomla.svg" },
-            { "name": "PrestaShop", "src": "/assets/svg/prestashop.svg" },
-            { "name": "Shopify", "src": "/assets/svg/shopify.svg" }
+          "subcategories": [
+            {
+              "title": "Lenguajes",
+              "items": [
+                { "name": "HTML", "src": "/assets/svg/html.svg" },
+                { "name": "CSS", "src": "/assets/svg/css.svg" },
+                { "name": "JavaScript", "src": "/assets/svg/javascript.svg" },
+                { "name": "TypeScript", "src": "/assets/svg/typescript.svg" },
+                { "name": "XML", "src": "/assets/svg/xml.svg" }
+              ]
+            },
+            {
+              "title": "Frameworks y Librerías",
+              "items": [
+                { "name": "React", "src": "/assets/svg/react.svg" },
+                { "name": "Tailwind CSS", "src": "/assets/svg/tailwind.svg" },
+                { "name": "Bootstrap", "src": "/assets/svg/bootstrap.svg" },
+                { "name": "jQuery", "src": "/assets/svg/jquery.svg" },
+                { "name": "Pug", "src": "/assets/svg/pug.svg" }
+              ]
+            },
+            {
+              "title": "CMS y E-commerce",
+              "items": [
+                { "name": "WordPress", "src": "/assets/svg/wordpress.svg" },
+                { "name": "WooCommerce", "src": "/assets/svg/woocommerce.svg" },
+                { "name": "PrestaShop", "src": "/assets/svg/prestashop.svg" },
+                { "name": "Shopify", "src": "/assets/svg/shopify.svg" },
+                { "name": "Joomla", "src": "/assets/svg/joomla.svg" }
+              ]
+            }
           ]
         },
         {
           "category": "Backend",
-          "languages": [
-            { "name": "PHP", "src": "/assets/svg/php.svg" },
-            { "name": "Java", "src": "/assets/svg/java.svg" },
-            { "name": "Python", "src": "/assets/svg/python.svg" },
-            { "name": "Node.js", "src": "/assets/svg/nodejs.svg" }
-          ],
-          "frameworks": [
-            { "name": "Laravel", "src": "/assets/svg/laravel.svg" }
-          ],
-          "servers": [
-            { "name": "Apache", "src": "/assets/svg/apache.svg" },
-            { "name": "Tomcat", "src": "/assets/svg/tomcat.svg" },
-            { "name": "XAMPP", "src": "/assets/svg/xampp.svg" }
+          "subcategories": [
+            {
+              "title": "Lenguajes y Entornos",
+              "items": [
+                { "name": "Node.js", "src": "/assets/svg/nodejs.svg" },
+                { "name": "PHP", "src": "/assets/svg/php.svg" },
+                { "name": "Java", "src": "/assets/svg/java.svg" },
+                { "name": "Python", "src": "/assets/svg/python.svg" }
+              ]
+            },
+            {
+              "title": "Frameworks",
+              "items": [
+                { "name": "Laravel", "src": "/assets/svg/laravel.svg" },
+                { "name": "Spring Boot", "src": "/assets/svg/spring.svg" }
+              ]
+            },
+            {
+              "title": "Servidores",
+              "items": [
+                { "name": "Apache", "src": "/assets/svg/apache.svg" },
+                { "name": "Tomcat", "src": "/assets/svg/tomcat.svg" },
+                { "name": "XAMPP", "src": "/assets/svg/xampp.svg" }
+              ]
+            }
           ]
         },
         {
           "category": "Bases de Datos",
-          "databases": [
-            { "name": "MySQL", "src": "/assets/svg/mysql.svg" },
-            { "name": "PostgreSQL", "src": "/assets/svg/postgresql.svg" },
-            { "name": "SQLite", "src": "/assets/svg/sqlite.svg" }
-          ],
-          "tools": [
-            { "name": "phpMyAdmin", "src": "/assets/svg/phpmyadmin.svg" }
+          "subcategories": [
+            {
+              "title": "Sistemas y Herramientas",
+              "items": [
+                { "name": "MySQL", "src": "/assets/svg/mysql.svg" },
+                { "name": "PostgreSQL", "src": "/assets/svg/postgresql.svg" },
+                { "name": "SQLite", "src": "/assets/svg/sqlite.svg" },
+                { "name": "phpMyAdmin", "src": "/assets/svg/phpmyadmin.svg" }
+              ]
+            }
           ]
         },
         {
-          "category": "Control de Versiones",
-          "tools": [
-            { "name": "Git", "src": "/assets/svg/git.svg" },
-            { "name": "GitHub", "src": "/assets/svg/github.svg" },
-            { "name": "GitLab", "src": "/assets/svg/gitlab.svg" }
+          "category": "Herramientas y Entorno",
+          "subcategories": [
+            {
+              "title": "Control de Versiones",
+              "items": [
+                { "name": "Git", "src": "/assets/svg/git.svg" },
+                { "name": "GitHub", "src": "/assets/svg/github.svg" },
+                { "name": "GitLab", "src": "/assets/svg/gitlab.svg" }
+              ]
+            },
+            {
+              "title": "Entorno y DevOps",
+              "items": [
+                { "name": "Docker", "src": "/assets/svg/docker.svg" },
+                { "name": "Bash", "src": "/assets/svg/bash.svg" },
+                { "name": "VSCode", "src": "/assets/svg/vscode.svg" }
+              ]
+            }
           ]
         }
       ]

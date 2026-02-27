@@ -7,6 +7,7 @@ import {
   IconBrandWhatsapp,
 } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "framer-motion";
+const Motion = motion;
 import { useTranslation } from "react-i18next";
 
 const SocialIcon = ({ title, icon, href, download, copyText, copiedText }) => {
@@ -27,7 +28,7 @@ const SocialIcon = ({ title, icon, href, download, copyText, copiedText }) => {
   };
 
   return (
-    <motion.a
+    <Motion.a
       href={href}
       download={download}
       target={!copyText && !download ? "_blank" : undefined}
@@ -37,17 +38,17 @@ const SocialIcon = ({ title, icon, href, download, copyText, copiedText }) => {
       onMouseLeave={() => setHovered(false)}
       onClick={handleClick}
     >
-      <motion.div
+      <Motion.div
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.9 }}
         className="flex items-center justify-center w-14 h-14 rounded-4xl border-2 border-gray-400 dark:border-gray-700 bg-gray-100 dark:bg-black text-gray-400 hover:text-violet-400 transition-colors duration-500"
       >
         {icon}
-      </motion.div>
+      </Motion.div>
 
       <AnimatePresence>
         {(hovered || copied) && (
-          <motion.div
+          <Motion.div
             initial={{ opacity: 0, y: -5 }}
             animate={{ opacity: 1, y: 6 }}
             exit={{ opacity: 0, y: -5 }}
@@ -55,10 +56,10 @@ const SocialIcon = ({ title, icon, href, download, copyText, copiedText }) => {
             className="absolute top-full mt-2 px-2 py-1 text-xs rounded-md bg-gray-100 dark:bg-gray-800 text-neutral-700 dark:text-gray-200 shadow-md whitespace-nowrap"
           >
             {copied ? copiedText : title}
-          </motion.div>
+          </Motion.div>
         )}
       </AnimatePresence>
-    </motion.a>
+    </Motion.a>
   );
 };
 
