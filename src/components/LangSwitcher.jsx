@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate, useLocation } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion as Motion, AnimatePresence } from "framer-motion";
 
 import FlagES from "../../public/assets/flags/flag-es.svg";
 import FlagEN from "../../public/assets/flags/flag-en.svg";
@@ -15,9 +15,27 @@ export default function LangSwitcher() {
   const ref = useRef(null);
 
   const flags = {
-    es: <img src={FlagES} alt="Español" className="w-5 h-5 hover:scale-110 transition-transform duration-200" />,
-    en: <img src={FlagEN} alt="English" className="w-5 h-5 hover:scale-110 transition-transform duration-200" />,
-    fr: <img src={FlagFR} alt="Français" className="w-5 h-5 hover:scale-110 transition-transform duration-200" />,
+    es: (
+      <img
+        src={FlagES}
+        alt="Español"
+        className="w-5 h-5 hover:scale-110 transition-transform duration-200"
+      />
+    ),
+    en: (
+      <img
+        src={FlagEN}
+        alt="English"
+        className="w-5 h-5 hover:scale-110 transition-transform duration-200"
+      />
+    ),
+    fr: (
+      <img
+        src={FlagFR}
+        alt="Français"
+        className="w-5 h-5 hover:scale-110 transition-transform duration-200"
+      />
+    ),
   };
 
   const currentLang = i18n.language || "es";
@@ -32,7 +50,7 @@ export default function LangSwitcher() {
     const routesNew = i18n.getResourceBundle(newLang, "global").routes;
 
     const matchingKey = Object.keys(routesCurrent).find(
-      (key) => routesCurrent[key] === currentPath
+      (key) => routesCurrent[key] === currentPath,
     );
 
     i18n.changeLanguage(newLang);
@@ -75,7 +93,7 @@ export default function LangSwitcher() {
       {/* Desplegable */}
       <AnimatePresence>
         {isOpen && (
-          <motion.div
+          <Motion.div
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
@@ -91,7 +109,7 @@ export default function LangSwitcher() {
                 {flags[lang]}
               </button>
             ))}
-          </motion.div>
+          </Motion.div>
         )}
       </AnimatePresence>
     </div>

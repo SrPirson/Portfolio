@@ -1,5 +1,6 @@
 import React from "react";
 import SwitchMode from "../components/SwitchTheme";
+import Carousel from "../components/projects/Carousel";
 
 const Projects = () => {
   return (
