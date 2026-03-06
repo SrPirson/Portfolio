@@ -157,7 +157,8 @@
                 { "name": "Node.js", "src": "/assets/svg/nodejs.svg" },
                 { "name": "PHP", "src": "/assets/svg/php.svg" },
                 { "name": "Java", "src": "/assets/svg/java.svg" },
-                { "name": "Python", "src": "/assets/svg/python.svg" }
+                { "name": "Python", "src": "/assets/svg/python.svg" },
+                { "name": "LUA", "src": "/assets/svg/lua.svg" }
               ]
             },
             {
@@ -211,6 +212,75 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    "projects": {
+      "code": "Code",
+      "technologies-tittle": "Technologies",
+      "show-repository": "Voir le référentiel",
+      "show-demo": "Voir la démo",
+      "project": [
+        {
+          "title": "Mapa Balizas V16",
+          "description": "Application web interactive qui montre l'emplacement des balises en temps réel.",
+          "src": "/assets/img/projects/balizasv16.jpg",
+          "technologies": [
+            { "name": "Spring Boot", "src": "/assets/svg/spring.svg" },
+            { "name": "React", "src": "/assets/svg/react.svg" },
+            { "name": "Tailwind CSS", "src": "/assets/svg/tailwind.svg" }
+          ],
+          "repository": null,
+          "deployed": "https://mapabalizav16.vercel.app/"
+        },
+        {
+          "title": "CleanWorld",
+          "description": "Projet visant à identifier, visualiser et coordonner les actions de nettoyage citoyen en temps réel.",
+          "src": "/assets/img/projects/cleanworld.png",
+          "technologies": [
+            { "name": "Spring Boot", "src": "/assets/svg/spring.svg" },
+            { "name": "React", "src": "/assets/svg/react.svg" },
+            { "name": "Tailwind CSS", "src": "/assets/svg/tailwind.svg" },
+            { "name": "MySQL", "src": "/assets/svg/mysql.svg" }
+          ],
+          "repository": "https://github.com/SrPirson/TerraDev_CleanWorld",
+          "deployed": "https://terradev-cleanworld.vercel.app/"
+        },
+        {
+          "title": "NexeCare",
+          "description": "Application de santé collaborative développée lors d'un hackathon, connectant patients et professionnels de santé via une interface moderne avec gestion des rendez-vous.",
+          "src": "/assets/img/projects/nexecare.jpg",
+          "technologies": [
+            { "name": "Spring Boot", "src": "/assets/svg/spring.svg" },
+            { "name": "React", "src": "/assets/svg/react.svg" },
+            { "name": "Tailwind CSS", "src": "/assets/svg/tailwind.svg" }
+          ],
+          "repository": "https://github.com/SrPirson/NexeCare-Hackathon",
+          "deployed": null
+        },
+        {
+          "title": "SocialiCar",
+          "description": "Plateforme web pour partager et louer des véhicules entre utilisateurs avec messagerie, gestion des véhicules et cartes interactives.",
+          "src": "/assets/img/projects/socialicar.png",
+          "technologies": [
+            { "name": "PHP", "src": "/assets/svg/php.svg" },
+            { "name": "HTML", "src": "/assets/svg/html.svg" },
+            { "name": "Bootstrap", "src": "/assets/svg/bootstrap.svg" },
+            { "name": "JavaScript", "src": "/assets/svg/javascript.svg" },
+            { "name": "phpMyAdmin", "src": "/assets/svg/phpmyadmin.svg" }
+          ],
+          "repository": "https://github.com/SrPirson/TFG-SocialiCar",
+          "deployed": "https://socialicar.wuaze.com/"
+        },
+        {
+          "title": "Addons World of Warcraft",
+          "description": "Collection d'addons pour World of Warcraft qui améliorent l'expérience de jeu en automatisant des tâches, optimisant l'interface et fournissant des outils de gestion des missions.",
+          "src": "/assets/img/projects/world-of-warcraft.jpg",
+          "technologies": [
+            { "name": "LUA", "src": "/assets/svg/lua.svg" }
+          ],
+          "repository": "https://github.com/Pirson-s-Addons",
+          "deployed": "https://www.curseforge.com/members/pirson/projects"
         }
       ]
     },

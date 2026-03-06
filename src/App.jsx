@@ -24,8 +24,6 @@ const pageTransition = {
   duration: 0.1,
 };
 
-
-
 function AppContent() {
   const location = useLocation();
   const [t] = useTranslation("global");

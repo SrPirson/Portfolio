@@ -1,223 +1,292 @@
 {
-    "app": {
-      "name": "Pirson ",
-      "animated_titles": ["Dev", "Programador", "Desarrollador", "Full Stack"]
-    },
-    "navbar": {
-      "home": "Inicio",
-      "about": "Sobre Mí",
-      "projects": "Proyectos",
-      "contact": "Contacto"
-    },
-    "home": {
-      "title": "Francisco Cortés Pirson",
-      "subtitle": "Programador Web Full Stack",
-      "description": "Siempre explorando nuevas tecnologías y buenas prácticas para transformar ideas en soluciones web completas, funcionales y de alto rendimiento.",
-      "copied": "¡Copiado!",
-      "social": {
-        "github": "GitHub",
-        "linkedin": "LinkedIn",
-        "email": "Copiar Email",
-        "whatsapp": "WhatsApp",
-        "cv": "Descargar CV"
-      }
-    },
-    "about": {
-      "title": "Sobre Mí",
-      "description_1": "Soy desarrollador web junior, en constante aprendizaje, me desenvuelvo bien en el trabajo en equipo y asumir retos que impulsen el crecimiento personal y profesional.",
-      "description_2": "Destaco por mi liderazgo, adaptabilidad y capacidad para resolver problemas de manera creativa y eficiente.",
-      "sections": {
-        "education": "Formación",
-        "certificates": "Certificados",
-        "skills": "Habilidades"
-      },
-      "button_certificates_more": "Ver más",
-      "button_certificates_less": "Ver menos",
-      "education": [
-        {
-          "year": "2025",
-          "title": "Bootcamp Full-Stack Java, Spring Boot, React y SQL",
-          "school": "Esplai Formación",
-          "src": "/assets/img/logo-FE.png",
-          "alt": "Logo Esplai"
-        },
-        {
-          "year": "2023",
-          "title": "Técnico Superior en Desarrollo de Aplicaciones Web",
-          "school": "MEDAC",
-          "src": "/assets/img/logo-Medac.png",
-          "alt": "Logo MEDAC"
-        },
-        {
-          "year": "2018",
-          "title": "Técnico en Sistemas Microinformáticos y Redes",
-          "school": "I.E.S Belén",
-          "src": "/assets/img/logo-Belen.png",
-          "alt": "Logo IES Belén"
-        }
-      ],
-      "certificates": [
-        {
-          "title": "Bootcamp Full-Stack Java, Spring Boot, React y SQL",
-          "school": "Fundación Esplai",
-          "date": "Diciembre 2025",
-          "src": "/assets/certificados/img/certificado_bootcamp_fullstack_fundacion_esplai.jpg"
-        },
-        {
-          "title": "Microsoft Certified Azure AI Fundamentals",
-          "school": "Microsoft",
-          "date": "Diciembre 2025",
-          "src": "/assets/certificados/img/certificado_azure_ia_fundamentals.jpg"
-        },
-        {
-          "title": "Microsoft Certified Azure Fundamentals",
-          "school": "Microsoft",
-          "date": "Noviembre 2025",
-          "src": "/assets/certificados/img/certificado_azure_fundamentals.jpg"
-        },
-        {
-          "title": "Curso de Iniciación al Desarrollo con IA",
-          "school": "BIG school",
-          "date": "Octubre 2025",
-          "src": "/assets/certificados/img/certificado_iniciacion_desarrollo_IA.jpg"
-        },
-        {
-          "title": "Tailwind CSS",
-          "school": "OpenWebinars",
-          "date": "Julio 2025",
-          "src": "/assets/certificados/img/certificado_tailwind_css.jpg"
-        },
-        {
-          "title": "Creación y testing de APIs con Node.js y Express",
-          "school": "OpenWebinars",
-          "date": "Abril 2025",
-          "src": "/assets/certificados/img/certificado_creación_y_testing_de_apis_con_node.js_y_express.jpg"
-        },
-        {
-          "title": "Desarrollo de aplicaciones web con NodeJS y Express",
-          "school": "OpenWebinars",
-          "date": "Marzo 2025",
-          "src": "/assets/certificados/img/certificado_desarrollo_de_aplicaciones_web_con_nodejs_y_express.jpg"
-        },
-        {
-          "title": "Fundamentos de React",
-          "school": "OpenWebinars",
-          "date": "Marzo 2025",
-          "src": "/assets/certificados/img/certificado_fundamentos_de_react.jpg"
-        },
-        {
-          "title": "Curso de jQuery",
-          "school": "OpenWebinars",
-          "date": "Enero 2025",
-          "src": "/assets/certificados/img/certificado_curso_de_jquery.jpg"
-        }
-      ],
-      "skills": [
-        {
-          "category": "Frontend",
-          "subcategories": [
-            {
-              "title": "Lenguajes",
-              "items": [
-                { "name": "HTML", "src": "/assets/svg/html.svg" },
-                { "name": "CSS", "src": "/assets/svg/css.svg" },
-                { "name": "JavaScript", "src": "/assets/svg/javascript.svg" },
-                { "name": "TypeScript", "src": "/assets/svg/typescript.svg" },
-                { "name": "XML", "src": "/assets/svg/xml.svg" }
-              ]
-            },
-            {
-              "title": "Frameworks y Librerías",
-              "items": [
-                { "name": "React", "src": "/assets/svg/react.svg" },
-                { "name": "Tailwind CSS", "src": "/assets/svg/tailwind.svg" },
-                { "name": "Bootstrap", "src": "/assets/svg/bootstrap.svg" },
-                { "name": "jQuery", "src": "/assets/svg/jquery.svg" },
-                { "name": "Pug", "src": "/assets/svg/pug.svg" }
-              ]
-            },
-            {
-              "title": "CMS y E-commerce",
-              "items": [
-                { "name": "WordPress", "src": "/assets/svg/wordpress.svg" },
-                { "name": "WooCommerce", "src": "/assets/svg/woocommerce.svg" },
-                { "name": "PrestaShop", "src": "/assets/svg/prestashop.svg" },
-                { "name": "Shopify", "src": "/assets/svg/shopify.svg" },
-                { "name": "Joomla", "src": "/assets/svg/joomla.svg" }
-              ]
-            }
-          ]
-        },
-        {
-          "category": "Backend",
-          "subcategories": [
-            {
-              "title": "Lenguajes y Entornos",
-              "items": [
-                { "name": "Node.js", "src": "/assets/svg/nodejs.svg" },
-                { "name": "PHP", "src": "/assets/svg/php.svg" },
-                { "name": "Java", "src": "/assets/svg/java.svg" },
-                { "name": "Python", "src": "/assets/svg/python.svg" }
-              ]
-            },
-            {
-              "title": "Frameworks",
-              "items": [
-                { "name": "Laravel", "src": "/assets/svg/laravel.svg" },
-                { "name": "Spring Boot", "src": "/assets/svg/spring.svg" }
-              ]
-            },
-            {
-              "title": "Servidores",
-              "items": [
-                { "name": "Apache", "src": "/assets/svg/apache.svg" },
-                { "name": "Tomcat", "src": "/assets/svg/tomcat.svg" },
-                { "name": "XAMPP", "src": "/assets/svg/xampp.svg" }
-              ]
-            }
-          ]
-        },
-        {
-          "category": "Bases de Datos",
-          "subcategories": [
-            {
-              "title": "Sistemas y Herramientas",
-              "items": [
-                { "name": "MySQL", "src": "/assets/svg/mysql.svg" },
-                { "name": "PostgreSQL", "src": "/assets/svg/postgresql.svg" },
-                { "name": "SQLite", "src": "/assets/svg/sqlite.svg" },
-                { "name": "phpMyAdmin", "src": "/assets/svg/phpmyadmin.svg" }
-              ]
-            }
-          ]
-        },
-        {
-          "category": "Herramientas y Entorno",
-          "subcategories": [
-            {
-              "title": "Control de Versiones",
-              "items": [
-                { "name": "Git", "src": "/assets/svg/git.svg" },
-                { "name": "GitHub", "src": "/assets/svg/github.svg" },
-                { "name": "GitLab", "src": "/assets/svg/gitlab.svg" }
-              ]
-            },
-            {
-              "title": "Entorno y DevOps",
-              "items": [
-                { "name": "Docker", "src": "/assets/svg/docker.svg" },
-                { "name": "Bash", "src": "/assets/svg/bash.svg" },
-                { "name": "VSCode", "src": "/assets/svg/vscode.svg" }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "routes": {
-      "about-me": "/sobre-mi",
-      "projects": "/proyectos",
-      "contact": "/contacto"
+  "app": {
+    "name": "Pirson ",
+    "animated_titles": ["Dev", "Programador", "Desarrollador", "Full Stack"]
+  },
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "home": {
+    "title": "Francisco Cortés Pirson",
+    "subtitle": "Programador Web Full Stack",
+    "description": "Siempre explorando nuevas tecnologías y buenas prácticas para transformar ideas en soluciones web completas, funcionales y de alto rendimiento.",
+    "copied": "¡Copiado!",
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "email": "Copiar Email",
+      "whatsapp": "WhatsApp",
+      "cv": "Descargar CV"
     }
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "description_1": "Soy desarrollador web junior, en constante aprendizaje, me desenvuelvo bien en el trabajo en equipo y asumir retos que impulsen el crecimiento personal y profesional.",
+    "description_2": "Destaco por mi liderazgo, adaptabilidad y capacidad para resolver problemas de manera creativa y eficiente.",
+    "sections": {
+      "education": "Formación",
+      "certificates": "Certificados",
+      "skills": "Habilidades"
+    },
+    "button_certificates_more": "Ver más",
+    "button_certificates_less": "Ver menos",
+    "education": [
+      {
+        "year": "2025",
+        "title": "Bootcamp Full-Stack Java, Spring Boot, React y SQL",
+        "school": "Esplai Formación",
+        "src": "/assets/img/logo-FE.png",
+        "alt": "Logo Esplai"
+      },
+      {
+        "year": "2023",
+        "title": "Técnico Superior en Desarrollo de Aplicaciones Web",
+        "school": "MEDAC",
+        "src": "/assets/img/logo-Medac.png",
+        "alt": "Logo MEDAC"
+      },
+      {
+        "year": "2018",
+        "title": "Técnico en Sistemas Microinformáticos y Redes",
+        "school": "I.E.S Belén",
+        "src": "/assets/img/logo-Belen.png",
+        "alt": "Logo IES Belén"
+      }
+    ],
+    "certificates": [
+      {
+        "title": "Bootcamp Full-Stack Java, Spring Boot, React y SQL",
+        "school": "Fundación Esplai",
+        "date": "Diciembre 2025",
+        "src": "/assets/certificados/img/certificado_bootcamp_fullstack_fundacion_esplai.jpg"
+      },
+      {
+        "title": "Microsoft Certified Azure AI Fundamentals",
+        "school": "Microsoft",
+        "date": "Diciembre 2025",
+        "src": "/assets/certificados/img/certificado_azure_ia_fundamentals.jpg"
+      },
+      {
+        "title": "Microsoft Certified Azure Fundamentals",
+        "school": "Microsoft",
+        "date": "Noviembre 2025",
+        "src": "/assets/certificados/img/certificado_azure_fundamentals.jpg"
+      },
+      {
+        "title": "Curso de Iniciación al Desarrollo con IA",
+        "school": "BIG school",
+        "date": "Octubre 2025",
+        "src": "/assets/certificados/img/certificado_iniciacion_desarrollo_IA.jpg"
+      },
+      {
+        "title": "Tailwind CSS",
+        "school": "OpenWebinars",
+        "date": "Julio 2025",
+        "src": "/assets/certificados/img/certificado_tailwind_css.jpg"
+      },
+      {
+        "title": "Creación y testing de APIs con Node.js y Express",
+        "school": "OpenWebinars",
+        "date": "Abril 2025",
+        "src": "/assets/certificados/img/certificado_creación_y_testing_de_apis_con_node.js_y_express.jpg"
+      },
+      {
+        "title": "Desarrollo de aplicaciones web con NodeJS y Express",
+        "school": "OpenWebinars",
+        "date": "Marzo 2025",
+        "src": "/assets/certificados/img/certificado_desarrollo_de_aplicaciones_web_con_nodejs_y_express.jpg"
+      },
+      {
+        "title": "Fundamentos de React",
+        "school": "OpenWebinars",
+        "date": "Marzo 2025",
+        "src": "/assets/certificados/img/certificado_fundamentos_de_react.jpg"
+      },
+      {
+        "title": "Curso de jQuery",
+        "school": "OpenWebinars",
+        "date": "Enero 2025",
+        "src": "/assets/certificados/img/certificado_curso_de_jquery.jpg"
+      }
+    ],
+    "skills": [
+      {
+        "category": "Frontend",
+        "subcategories": [
+          {
+            "title": "Lenguajes",
+            "items": [
+              { "name": "HTML", "src": "/assets/svg/html.svg" },
+              { "name": "CSS", "src": "/assets/svg/css.svg" },
+              { "name": "JavaScript", "src": "/assets/svg/javascript.svg" },
+              { "name": "TypeScript", "src": "/assets/svg/typescript.svg" },
+              { "name": "XML", "src": "/assets/svg/xml.svg" }
+            ]
+          },
+          {
+            "title": "Frameworks y Librerías",
+            "items": [
+              { "name": "React", "src": "/assets/svg/react.svg" },
+              { "name": "Tailwind CSS", "src": "/assets/svg/tailwind.svg" },
+              { "name": "Bootstrap", "src": "/assets/svg/bootstrap.svg" },
+              { "name": "jQuery", "src": "/assets/svg/jquery.svg" },
+              { "name": "Pug", "src": "/assets/svg/pug.svg" }
+            ]
+          },
+          {
+            "title": "CMS y E-commerce",
+            "items": [
+              { "name": "WordPress", "src": "/assets/svg/wordpress.svg" },
+              { "name": "WooCommerce", "src": "/assets/svg/woocommerce.svg" },
+              { "name": "PrestaShop", "src": "/assets/svg/prestashop.svg" },
+              { "name": "Shopify", "src": "/assets/svg/shopify.svg" },
+              { "name": "Joomla", "src": "/assets/svg/joomla.svg" }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Backend",
+        "subcategories": [
+          {
+            "title": "Lenguajes y Entornos",
+            "items": [
+              { "name": "Node.js", "src": "/assets/svg/nodejs.svg" },
+              { "name": "PHP", "src": "/assets/svg/php.svg" },
+              { "name": "Java", "src": "/assets/svg/java.svg" },
+              { "name": "Python", "src": "/assets/svg/python.svg" },
+              { "name": "LUA", "src": "/assets/svg/lua.svg" }
+            ]
+          },
+          {
+            "title": "Frameworks",
+            "items": [
+              { "name": "Laravel", "src": "/assets/svg/laravel.svg" },
+              { "name": "Spring Boot", "src": "/assets/svg/spring.svg" }
+            ]
+          },
+          {
+            "title": "Servidores",
+            "items": [
+              { "name": "Apache", "src": "/assets/svg/apache.svg" },
+              { "name": "Tomcat", "src": "/assets/svg/tomcat.svg" },
+              { "name": "XAMPP", "src": "/assets/svg/xampp.svg" }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Bases de Datos",
+        "subcategories": [
+          {
+            "title": "Sistemas y Herramientas",
+            "items": [
+              { "name": "MySQL", "src": "/assets/svg/mysql.svg" },
+              { "name": "PostgreSQL", "src": "/assets/svg/postgresql.svg" },
+              { "name": "SQLite", "src": "/assets/svg/sqlite.svg" },
+              { "name": "phpMyAdmin", "src": "/assets/svg/phpmyadmin.svg" }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Herramientas y Entorno",
+        "subcategories": [
+          {
+            "title": "Control de Versiones",
+            "items": [
+              { "name": "Git", "src": "/assets/svg/git.svg" },
+              { "name": "GitHub", "src": "/assets/svg/github.svg" },
+              { "name": "GitLab", "src": "/assets/svg/gitlab.svg" }
+            ]
+          },
+          {
+            "title": "Entorno y DevOps",
+            "items": [
+              { "name": "Docker", "src": "/assets/svg/docker.svg" },
+              { "name": "Bash", "src": "/assets/svg/bash.svg" },
+              { "name": "VSCode", "src": "/assets/svg/vscode.svg" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "code": "Código",
+    "technologies-tittle": "Tecnologías",
+    "show-repository": "Ver Repositorio",
+    "show-demo": "Ver demo",
+    "project": [
+      {
+        "title": "Mapa Balizas V16",
+        "description": "Aplicación web interactiva que muestra la ubicación de balizas en tiempo real.",
+        "src": "/assets/img/projects/balizasv16.jpg",
+        "technologies": [
+          { "name": "Spring Boot", "src": "/assets/svg/spring.svg" },
+          { "name": "React", "src": "/assets/svg/react.svg" },
+          { "name": "Tailwind CSS", "src": "/assets/svg/tailwind.svg" }
+        ],
+        "repository": null,
+        "deployed": "https://mapabalizav16.vercel.app/"
+      },
+      {
+        "title": "CleanWorld",
+        "description": "Proyecto con el objetivo de identificar, visualizar y coordinar acciones de limpieza ciudadana en tiempo real.",
+        "src": "/assets/img/projects/cleanworld.png",
+        "technologies": [
+          { "name": "Spring Boot", "src": "/assets/svg/spring.svg" },
+          { "name": "React", "src": "/assets/svg/react.svg" },
+          { "name": "Tailwind CSS", "src": "/assets/svg/tailwind.svg" },
+          { "name": "MySQL", "src": "/assets/svg/mysql.svg" }
+        ],
+        "repository": "https://github.com/SrPirson/TerraDev_CleanWorld",
+        "deployed": "https://terradev-cleanworld.vercel.app/"
+      },
+      {
+        "title": "NexeCare",
+        "description": "Aplicación de salud colaborativa desarrollada en hackathon, que conecta pacientes y profesionales sanitarios mediante una interfaz moderna y funcionalidades de gestión de citas.",
+        "src": "/assets/img/projects/nexecare.jpg",
+        "technologies": [
+          { "name": "Spring Boot", "src": "/assets/svg/spring.svg" },
+          { "name": "React", "src": "/assets/svg/react.svg" },
+          { "name": "Tailwind CSS", "src": "/assets/svg/tailwind.svg" }
+        ],
+        "repository": "https://github.com/SrPirson/NexeCare-Hackathon",
+        "deployed": null
+      },
+      {
+        "title": "SocialiCar",
+        "description": "Plataforma web para compartir y alquilar vehículos entre usuarios con sistema de mensajería, gestión de coches y mapas interactivos.",
+        "src": "/assets/img/projects/socialicar.png",
+        "technologies": [
+          { "name": "PHP", "src": "/assets/svg/php.svg" },
+          { "name": "HTML", "src": "/assets/svg/html.svg" },
+          { "name": "Bootstrap", "src": "/assets/svg/bootstrap.svg" },
+          { "name": "JavaScript", "src": "/assets/svg/javascript.svg" },
+          { "name": "phpMyAdmin", "src": "/assets/svg/phpmyadmin.svg" }
+        ],
+        "repository": "https://github.com/SrPirson/TFG-SocialiCar",
+        "deployed": "https://socialicar.wuaze.com/"
+      },
+      {
+        "title": "Addons World of Warcraft",
+        "description": "Colección de addons para World of Warcraft que mejoran la experiencia de juego automatizando tareas, optimizando la interfaz y proporcionando herramientas de gestión de misiones.",
+        "src": "/assets/img/projects/world-of-warcraft.jpg",
+        "technologies": [
+          { "name": "LUA", "src": "/assets/svg/lua.svg" }
+        ],
+        "repository": "https://github.com/Pirson-s-Addons",
+        "deployed": "https://www.curseforge.com/members/pirson/projects"
+      }
+    ]
+  },
+  "routes": {
+    "about-me": "/sobre-mi",
+    "projects": "/proyectos",
+    "contact": "/contacto"
   }
-  
+}

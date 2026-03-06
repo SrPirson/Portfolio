@@ -157,7 +157,8 @@
                 { "name": "Node.js", "src": "/assets/svg/nodejs.svg" },
                 { "name": "PHP", "src": "/assets/svg/php.svg" },
                 { "name": "Java", "src": "/assets/svg/java.svg" },
-                { "name": "Python", "src": "/assets/svg/python.svg" }
+                { "name": "Python", "src": "/assets/svg/python.svg" },
+                { "name": "LUA", "src": "/assets/svg/lua.svg" }
               ]
             },
             {
@@ -211,6 +212,75 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    "projects": {
+      "code": "Code",
+      "technologies-tittle": "Technologies",
+      "show-repository": "Show Repository",
+      "show-demo": "Live Demo",
+      "project": [
+        {
+          "title": "Mapa Balizas V16",
+          "description": "Interactive web application that shows the location of beacons in real time.",
+          "src": "/assets/img/projects/balizasv16.jpg",
+          "technologies": [
+            { "name": "Spring Boot", "src": "/assets/svg/spring.svg" },
+            { "name": "React", "src": "/assets/svg/react.svg" },
+            { "name": "Tailwind CSS", "src": "/assets/svg/tailwind.svg" }
+          ],
+          "repository": null,
+          "deployed": "https://mapabalizav16.vercel.app/"
+        },
+        {
+          "title": "CleanWorld",
+          "description": "Project aimed at identifying, visualizing, and coordinating citizen cleaning actions in real time.",
+          "src": "/assets/img/projects/cleanworld.png",
+          "technologies": [
+            { "name": "Spring Boot", "src": "/assets/svg/spring.svg" },
+            { "name": "React", "src": "/assets/svg/react.svg" },
+            { "name": "Tailwind CSS", "src": "/assets/svg/tailwind.svg" },
+            { "name": "MySQL", "src": "/assets/svg/mysql.svg" }
+          ],
+          "repository": "https://github.com/SrPirson/TerraDev_CleanWorld",
+          "deployed": "https://terradev-cleanworld.vercel.app/"
+        },
+        {
+          "title": "NexeCare",
+          "description": "Collaborative health application developed in a hackathon, connecting patients and healthcare professionals through a modern interface with appointment management features.",
+          "src": "/assets/img/projects/nexecare.jpg",
+          "technologies": [
+            { "name": "Spring Boot", "src": "/assets/svg/spring.svg" },
+            { "name": "React", "src": "/assets/svg/react.svg" },
+            { "name": "Tailwind CSS", "src": "/assets/svg/tailwind.svg" }
+          ],
+          "repository": "https://github.com/SrPirson/NexeCare-Hackathon",
+          "deployed": null
+        },
+        {
+          "title": "SocialiCar",
+          "description": "Web platform to share and rent vehicles among users with messaging, car management, and interactive maps.",
+          "src": "/assets/img/projects/socialicar.png",
+          "technologies": [
+            { "name": "PHP", "src": "/assets/svg/php.svg" },
+            { "name": "HTML", "src": "/assets/svg/html.svg" },
+            { "name": "Bootstrap", "src": "/assets/svg/bootstrap.svg" },
+            { "name": "JavaScript", "src": "/assets/svg/javascript.svg" },
+            { "name": "phpMyAdmin", "src": "/assets/svg/phpmyadmin.svg" }
+          ],
+          "repository": "https://github.com/SrPirson/TFG-SocialiCar",
+          "deployed": "https://socialicar.wuaze.com/"
+        },
+        {
+          "title": "Addons World of Warcraft",
+          "description": "Collection of World of Warcraft addons that enhance the gaming experience by automating tasks, optimizing the interface, and providing mission management tools.",
+          "src": "/assets/img/projects/world-of-warcraft.jpg",
+          "technologies": [
+            { "name": "LUA", "src": "/assets/svg/lua.svg" }
+          ],
+          "repository": "https://github.com/Pirson-s-Addons",
+          "deployed": "https://www.curseforge.com/members/pirson/projects"
         }
       ]
     },
