@@ -280,7 +280,7 @@
           { "name": "LUA", "src": "/assets/svg/lua.svg" }
         ],
         "repository": "https://github.com/Pirson-s-Addons",
-        "deployed": "https://www.curseforge.com/members/pirson/projects"
+        "deployed": "https://www.curseforge.com/members/pirson/projects?page=1&sortBy=TotalDownloads"
       }
     ]
   },
