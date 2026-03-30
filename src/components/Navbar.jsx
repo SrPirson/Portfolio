@@ -17,7 +17,7 @@ const Navbar = () => {
     { title: t("navbar.home"), icon: <IconHome className="h-full w-full" />, href: "/" },
     { title: t("navbar.about"), icon: <IconUser className="h-full w-full" />, href: t("routes.about-me") },
     { title: t("navbar.projects"), icon: <IconDeviceDesktopCode className="h-full w-full" />, href: t("routes.projects") },
-    { title: t("navbar.contact"), icon: <IconAddressBook className="h-full w-full" />, href: t("routes.contact") },
+    /* { title: t("navbar.contact"), icon: <IconAddressBook className="h-full w-full" />, href: t("routes.contact") }, */
   ];
 
   return (

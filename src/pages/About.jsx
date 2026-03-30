@@ -13,19 +13,21 @@ const About = () => {
     (item) => ({
       title: item.year,
       content: (
-        <div className="flex flex-row w-full gap-4 items-center">
+        <div className="flex flex-col md:flex-row w-full gap-6 md:gap-4 items-start md:items-center">
+          {/* Contenedor del Texto */}
           <div className="flex-1 text-left">
-            <h2 className="text-lg font-semibold text-subtitle">
+            <h2 className="text-lg md:text-xl font-semibold text-subtitle">
               {item.title}
             </h2>
-            <p className="text-sm font-normal text-text">{item.school}</p>
+            <p className="text-sm md:text-base font-normal text-text">{item.school}</p>
           </div>
-          <div className="flex justify-end">
-            <div className="h-32 w-32 rounded-lg overflow-hidden drop-shadow-[0_0_25px_rgba(168,85,247,0.8)] dark:drop-shadow-[0_0_25px_rgba(168,85,247,0.3)] bg-white/0.1 dark:bg-white backdrop-blur-md">
+          {/* Contenedor de la Imagen */}
+          <div className="flex justify-start md:justify-end w-full md:w-auto">
+            <div className="h-24 w-24 md:h-32 md:w-32 rounded-lg overflow-hidden drop-shadow-[0_0_25px_rgba(168,85,247,0.8)] dark:drop-shadow-[0_0_25px_rgba(168,85,247,0.3)] bg-white/10 dark:bg-white backdrop-blur-md">
               <img
                 src={item.src}
                 alt={item.alt}
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain p-2"
               />
             </div>
           </div>
