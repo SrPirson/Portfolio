@@ -64,6 +64,12 @@
     ],
     "certificates": [
       {
+        "title": "Copilot: Microsoft AI Fundamentals",
+        "school": "Santander Open Academy",
+        "date": "March 2026",
+        "src": "/assets/certificados/img/certificado_copilot_fundamentos_ia.jpg"
+      },
+      {
         "title": "Full Stack Java, Spring Boot, React and SQL Bootcamp",
         "school": "Fundación Esplai",
         "date": "December 2025",
