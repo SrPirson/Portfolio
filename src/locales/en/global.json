@@ -1,293 +1,695 @@
 {
-    "app": {
-      "name": "Pirson ",
-      "animated_titles": ["Dev", "Programmer", "Developer", "Full Stack"]
-    },
-    "navbar": {
-      "home": "Home",
-      "about": "About Me",
-      "projects": "Projects",
-      "contact": "Contact"
-    },
-    "home": {
-      "title": "Francisco Cortés Pirson",
-      "subtitle": "Full Stack Web Developer",
-      "description": "Always exploring new technologies and best practices to turn ideas into complete, functional, and high-performance web solutions.",
-      "copied": "Copied!",
-      "social": {
-        "github": "GitHub",
-        "linkedin": "LinkedIn",
-        "email": "Copy Email",
-        "whatsapp": "WhatsApp",
-        "cv": "Download CV"
-      }
-    },
-    "about": {
-      "title": "About Me",
-      "description_1": "I’m a junior web developer in constant learning, comfortable working in teams and taking on challenges that foster both personal and professional growth.",
-      "description_2": "I stand out for my leadership, adaptability, and ability to solve problems creatively and efficiently.",
-      "sections": {
-        "education": "Education",
-        "certificates": "Certificates",
-        "skills": "Skills"
-      },
-      "button_certificates_more": "Show more",
-      "button_certificates_less": "Show less",
-      "education": [
-        {
-          "year": "2025",
-          "title": "Full Stack Java, Spring Boot, React and SQL Bootcamp",
-          "school": "Esplai Formación",
-          "src": "/assets/img/logo-FE.png",
-          "alt": "Logo Esplai"
-        },
-        {
-          "year": "2023",
-          "title": "Higher Technician in Web Application Development",
-          "school": "MEDAC",
-          "src": "/assets/img/logo-Medac.png",
-          "alt": "Logo MEDAC"
-        },
-        {
-          "year": "2018",
-          "title": "Technician in Microcomputer Systems and Networks",
-          "school": "I.E.S Belén",
-          "src": "/assets/img/logo-Belen.png",
-          "alt": "Logo IES Belén"
-        }
-      ],
-      "certificates": [
-        {
-          "title": "Full Stack Java, Spring Boot, React and SQL Bootcamp",
-          "school": "Fundación Esplai",
-          "date": "December 2025",
-          "src": "/assets/certificados/img/certificado_bootcamp_fullstack_fundacion_esplai.jpg"
-        },
-        {
-          "title": "Microsoft Certified Azure AI Fundamentals",
-          "school": "Microsoft",
-          "date": "December 2025",
-          "src": "/assets/certificados/img/certificado_azure_ia_fundamentals.jpg"
-        },
-        {
-          "title": "Microsoft Certified Azure Fundamentals",
-          "school": "Microsoft",
-          "date": "November 2025",
-          "src": "/assets/certificados/img/certificado_azure_fundamentals.jpg"
-        },
-        {
-          "title": "Introduction to Development with AI",
-          "school": "BIG school",
-          "date": "October 2025",
-          "src": "/assets/certificados/img/certificado_iniciacion_desarrollo_IA.jpg"
-        },
-        {
-          "title": "Tailwind CSS",
-          "school": "OpenWebinars",
-          "date": "July 2025",
-          "src": "/assets/certificados/img/certificado_tailwind_css.jpg"
-        },
-        {
-          "title": "Building and Testing APIs with Node.js and Express",
-          "school": "OpenWebinars",
-          "date": "April 2025",
-          "src": "/assets/certificados/img/certificado_creación_y_testing_de_apis_con_node.js_y_express.jpg"
-        },
-        {
-          "title": "Web Application Development with NodeJS and Express",
-          "school": "OpenWebinars",
-          "date": "March 2025",
-          "src": "/assets/certificados/img/certificado_desarrollo_de_aplicaciones_web_con_nodejs_y_express.jpg"
-        },
-        {
-          "title": "React Fundamentals",
-          "school": "OpenWebinars",
-          "date": "March 2025",
-          "src": "/assets/certificados/img/certificado_fundamentos_de_react.jpg"
-        },
-        {
-          "title": "jQuery Course",
-          "school": "OpenWebinars",
-          "date": "January 2025",
-          "src": "/assets/certificados/img/certificado_curso_de_jquery.jpg"
-        }
-      ],
-      "skills": [
-        {
-          "category": "Frontend",
-          "subcategories": [
-            {
-              "title": "Languages",
-              "items": [
-                { "name": "HTML", "src": "/assets/svg/html.svg" },
-                { "name": "CSS", "src": "/assets/svg/css.svg" },
-                { "name": "JavaScript", "src": "/assets/svg/javascript.svg" },
-                { "name": "TypeScript", "src": "/assets/svg/typescript.svg" },
-                { "name": "XML", "src": "/assets/svg/xml.svg" }
-              ]
-            },
-            {
-              "title": "Frameworks & Libraries",
-              "items": [
-                { "name": "React", "src": "/assets/svg/react.svg" },
-                { "name": "Tailwind CSS", "src": "/assets/svg/tailwind.svg" },
-                { "name": "Bootstrap", "src": "/assets/svg/bootstrap.svg" },
-                { "name": "jQuery", "src": "/assets/svg/jquery.svg" },
-                { "name": "Pug", "src": "/assets/svg/pug.svg" }
-              ]
-            },
-            {
-              "title": "CMS & E-commerce",
-              "items": [
-                { "name": "WordPress", "src": "/assets/svg/wordpress.svg" },
-                { "name": "WooCommerce", "src": "/assets/svg/woocommerce.svg" },
-                { "name": "PrestaShop", "src": "/assets/svg/prestashop.svg" },
-                { "name": "Shopify", "src": "/assets/svg/shopify.svg" },
-                { "name": "Joomla", "src": "/assets/svg/joomla.svg" }
-              ]
-            }
-          ]
-        },
-        {
-          "category": "Backend",
-          "subcategories": [
-            {
-              "title": "Languages & Environments",
-              "items": [
-                { "name": "Node.js", "src": "/assets/svg/nodejs.svg" },
-                { "name": "PHP", "src": "/assets/svg/php.svg" },
-                { "name": "Java", "src": "/assets/svg/java.svg" },
-                { "name": "Python", "src": "/assets/svg/python.svg" },
-                { "name": "LUA", "src": "/assets/svg/lua.svg" }
-              ]
-            },
-            {
-              "title": "Frameworks",
-              "items": [
-                { "name": "Laravel", "src": "/assets/svg/laravel.svg" },
-                { "name": "Spring Boot", "src": "/assets/svg/spring.svg" }
-              ]
-            },
-            {
-              "title": "Servers",
-              "items": [
-                { "name": "Apache", "src": "/assets/svg/apache.svg" },
-                { "name": "Tomcat", "src": "/assets/svg/tomcat.svg" },
-                { "name": "XAMPP", "src": "/assets/svg/xampp.svg" }
-              ]
-            }
-          ]
-        },
-        {
-          "category": "Databases",
-          "subcategories": [
-            {
-              "title": "Systems & Tools",
-              "items": [
-                { "name": "MySQL", "src": "/assets/svg/mysql.svg" },
-                { "name": "PostgreSQL", "src": "/assets/svg/postgresql.svg" },
-                { "name": "SQLite", "src": "/assets/svg/sqlite.svg" },
-                { "name": "phpMyAdmin", "src": "/assets/svg/phpmyadmin.svg" }
-              ]
-            }
-          ]
-        },
-        {
-          "category": "Tools & Environment",
-          "subcategories": [
-            {
-              "title": "Version Control",
-              "items": [
-                { "name": "Git", "src": "/assets/svg/git.svg" },
-                { "name": "GitHub", "src": "/assets/svg/github.svg" },
-                { "name": "GitLab", "src": "/assets/svg/gitlab.svg" }
-              ]
-            },
-            {
-              "title": "Environment & DevOps",
-              "items": [
-                { "name": "Docker", "src": "/assets/svg/docker.svg" },
-                { "name": "Bash", "src": "/assets/svg/bash.svg" },
-                { "name": "VSCode", "src": "/assets/svg/vscode.svg" }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "projects": {
-      "code": "Code",
-      "technologies-tittle": "Technologies",
-      "show-repository": "Show Repository",
-      "show-demo": "Live Demo",
-      "project": [
-        {
-          "title": "Mapa Balizas V16",
-          "description": "Interactive web application that shows the location of beacons in real time.",
-          "src": "/assets/img/projects/balizasv16.jpg",
-          "technologies": [
-            { "name": "Spring Boot", "src": "/assets/svg/spring.svg" },
-            { "name": "React", "src": "/assets/svg/react.svg" },
-            { "name": "Tailwind CSS", "src": "/assets/svg/tailwind.svg" }
-          ],
-          "repository": null,
-          "deployed": "https://baliza.pirson.dev/"
-        },
-        {
-          "title": "CleanWorld",
-          "description": "Project aimed at identifying, visualizing, and coordinating citizen cleaning actions in real time.",
-          "src": "/assets/img/projects/cleanworld.png",
-          "technologies": [
-            { "name": "Spring Boot", "src": "/assets/svg/spring.svg" },
-            { "name": "React", "src": "/assets/svg/react.svg" },
-            { "name": "Tailwind CSS", "src": "/assets/svg/tailwind.svg" },
-            { "name": "MySQL", "src": "/assets/svg/mysql.svg" }
-          ],
-          "repository": "https://github.com/SrPirson/TerraDev_CleanWorld",
-          "deployed": "https://terradev-cleanworld.vercel.app/"
-        },
-        {
-          "title": "NexeCare",
-          "description": "Collaborative health application developed in a hackathon, connecting patients and healthcare professionals through a modern interface with appointment management features.",
-          "src": "/assets/img/projects/nexecare.jpg",
-          "technologies": [
-            { "name": "Spring Boot", "src": "/assets/svg/spring.svg" },
-            { "name": "React", "src": "/assets/svg/react.svg" },
-            { "name": "Tailwind CSS", "src": "/assets/svg/tailwind.svg" }
-          ],
-          "repository": "https://github.com/SrPirson/NexeCare-Hackathon",
-          "deployed": null
-        },
-        {
-          "title": "SocialiCar",
-          "description": "Web platform to share and rent vehicles among users with messaging, car management, and interactive maps.",
-          "src": "/assets/img/projects/socialicar.png",
-          "technologies": [
-            { "name": "PHP", "src": "/assets/svg/php.svg" },
-            { "name": "HTML", "src": "/assets/svg/html.svg" },
-            { "name": "Bootstrap", "src": "/assets/svg/bootstrap.svg" },
-            { "name": "JavaScript", "src": "/assets/svg/javascript.svg" },
-            { "name": "phpMyAdmin", "src": "/assets/svg/phpmyadmin.svg" }
-          ],
-          "repository": "https://github.com/SrPirson/TFG-SocialiCar",
-          "deployed": "https://socialicar.wuaze.com/"
-        },
-        {
-          "title": "Addons World of Warcraft",
-          "description": "Collection of World of Warcraft addons that enhance the gaming experience by automating tasks, optimizing the interface, and providing mission management tools.",
-          "src": "/assets/img/projects/world-of-warcraft.jpg",
-          "technologies": [
-            { "name": "LUA", "src": "/assets/svg/lua.svg" }
-          ],
-          "repository": "https://github.com/Pirson-s-Addons",
-          "deployed": "https://www.curseforge.com/members/pirson/projects?page=1&sortBy=TotalDownloads"
-        }
-      ]
-    },
-    "routes": {
-      "about-me": "/about-me",
-      "projects": "/projects",
-      "contact": "/contact"
+  "app": {
+    "name": "Pirson ",
+    "animated_titles": [
+      "Dev",
+      "Programmer",
+      "Developer",
+      "Full Stack"
+    ]
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "About Me",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Francisco Cortés Pirson",
+    "subtitle": "Full Stack Web Developer",
+    "description": "Always exploring new technologies and best practices to turn ideas into complete, functional, and high-performance web solutions.",
+    "copied": "Copied!",
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "email": "Copy Email",
+      "whatsapp": "WhatsApp",
+      "cv": "Download CV"
     }
+  },
+  "about": {
+    "title": "About Me",
+    "description_1": "I'm a frontend developer at BNT Business Telecom, where I build telecom and IoT SaaS products with React. I keep learning every day, work well in teams and enjoy challenges that help me grow personally and professionally.",
+    "description_2": "I stand out for my leadership, adaptability, and ability to solve problems creatively and efficiently.",
+    "sections": {
+      "education": "Education",
+      "certificates": "Certificates",
+      "skills": "Skills",
+      "experience": "Experience"
+    },
+    "button_certificates_more": "Show more",
+    "button_certificates_less": "Show less",
+    "education": [
+      {
+        "year": "2025",
+        "title": "Full Stack Java, Spring Boot, React and SQL Bootcamp",
+        "school": "Esplai Formación",
+        "src": "/assets/img/logo-FE.png",
+        "alt": "Logo Esplai"
+      },
+      {
+        "year": "2023",
+        "title": "Higher Technician in Web Application Development",
+        "school": "MEDAC",
+        "src": "/assets/img/logo-Medac.png",
+        "alt": "Logo MEDAC"
+      },
+      {
+        "year": "2018",
+        "title": "Technician in Microcomputer Systems and Networks",
+        "school": "I.E.S Belén",
+        "src": "/assets/img/logo-Belen.png",
+        "alt": "Logo IES Belén"
+      }
+    ],
+    "certificates": [
+      {
+        "title": "Full Stack Java, Spring Boot, React and SQL Bootcamp",
+        "school": "Fundación Esplai",
+        "date": "December 2025",
+        "src": "/assets/certificados/img/certificado_bootcamp_fullstack_fundacion_esplai.jpg"
+      },
+      {
+        "title": "Microsoft Certified Azure AI Fundamentals",
+        "school": "Microsoft",
+        "date": "December 2025",
+        "src": "/assets/certificados/img/certificado_azure_ia_fundamentals.jpg"
+      },
+      {
+        "title": "Microsoft Certified Azure Fundamentals",
+        "school": "Microsoft",
+        "date": "November 2025",
+        "src": "/assets/certificados/img/certificado_azure_fundamentals.jpg"
+      },
+      {
+        "title": "Introduction to Development with AI",
+        "school": "BIG school",
+        "date": "October 2025",
+        "src": "/assets/certificados/img/certificado_iniciacion_desarrollo_IA.jpg"
+      },
+      {
+        "title": "Tailwind CSS",
+        "school": "OpenWebinars",
+        "date": "July 2025",
+        "src": "/assets/certificados/img/certificado_tailwind_css.jpg"
+      },
+      {
+        "title": "Building and Testing APIs with Node.js and Express",
+        "school": "OpenWebinars",
+        "date": "April 2025",
+        "src": "/assets/certificados/img/certificado_creación_y_testing_de_apis_con_node.js_y_express.jpg"
+      },
+      {
+        "title": "Web Application Development with NodeJS and Express",
+        "school": "OpenWebinars",
+        "date": "March 2025",
+        "src": "/assets/certificados/img/certificado_desarrollo_de_aplicaciones_web_con_nodejs_y_express.jpg"
+      },
+      {
+        "title": "React Fundamentals",
+        "school": "OpenWebinars",
+        "date": "March 2025",
+        "src": "/assets/certificados/img/certificado_fundamentos_de_react.jpg"
+      },
+      {
+        "title": "jQuery Course",
+        "school": "OpenWebinars",
+        "date": "January 2025",
+        "src": "/assets/certificados/img/certificado_curso_de_jquery.jpg"
+      }
+    ],
+    "skills": [
+      {
+        "category": "Frontend",
+        "subcategories": [
+          {
+            "title": "Languages",
+            "items": [
+              {
+                "name": "HTML",
+                "src": "/assets/svg/html.svg"
+              },
+              {
+                "name": "CSS",
+                "src": "/assets/svg/css.svg"
+              },
+              {
+                "name": "JavaScript",
+                "src": "/assets/svg/javascript.svg"
+              },
+              {
+                "name": "TypeScript",
+                "src": "/assets/svg/typescript.svg"
+              },
+              {
+                "name": "XML",
+                "src": "/assets/svg/xml.svg"
+              }
+            ]
+          },
+          {
+            "title": "Frameworks & Libraries",
+            "items": [
+              {
+                "name": "React",
+                "src": "/assets/svg/react.svg"
+              },
+              {
+                "name": "Next.js",
+                "src": "/assets/svg/nextjs.svg"
+              },
+              {
+                "name": "Tailwind CSS",
+                "src": "/assets/svg/tailwind.svg"
+              },
+              {
+                "name": "Bootstrap",
+                "src": "/assets/svg/bootstrap.svg"
+              },
+              {
+                "name": "jQuery",
+                "src": "/assets/svg/jquery.svg"
+              },
+              {
+                "name": "Pug",
+                "src": "/assets/svg/pug.svg"
+              }
+            ]
+          },
+          {
+            "title": "CMS & E-commerce",
+            "items": [
+              {
+                "name": "WordPress",
+                "src": "/assets/svg/wordpress.svg"
+              },
+              {
+                "name": "WooCommerce",
+                "src": "/assets/svg/woocommerce.svg"
+              },
+              {
+                "name": "PrestaShop",
+                "src": "/assets/svg/prestashop.svg"
+              },
+              {
+                "name": "Shopify",
+                "src": "/assets/svg/shopify.svg"
+              },
+              {
+                "name": "Joomla",
+                "src": "/assets/svg/joomla.svg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Backend",
+        "subcategories": [
+          {
+            "title": "Languages & Environments",
+            "items": [
+              {
+                "name": "Node.js",
+                "src": "/assets/svg/nodejs.svg"
+              },
+              {
+                "name": "PHP",
+                "src": "/assets/svg/php.svg"
+              },
+              {
+                "name": "Java",
+                "src": "/assets/svg/java.svg"
+              },
+              {
+                "name": "Python",
+                "src": "/assets/svg/python.svg"
+              },
+              {
+                "name": "LUA",
+                "src": "/assets/svg/lua.svg"
+              }
+            ]
+          },
+          {
+            "title": "Frameworks",
+            "items": [
+              {
+                "name": "Laravel",
+                "src": "/assets/svg/laravel.svg"
+              },
+              {
+                "name": "Spring Boot",
+                "src": "/assets/svg/spring.svg"
+              }
+            ]
+          },
+          {
+            "title": "Servers",
+            "items": [
+              {
+                "name": "Apache",
+                "src": "/assets/svg/apache.svg"
+              },
+              {
+                "name": "Tomcat",
+                "src": "/assets/svg/tomcat.svg"
+              },
+              {
+                "name": "XAMPP",
+                "src": "/assets/svg/xampp.svg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Databases",
+        "subcategories": [
+          {
+            "title": "Systems & Tools",
+            "items": [
+              {
+                "name": "MySQL",
+                "src": "/assets/svg/mysql.svg"
+              },
+              {
+                "name": "PostgreSQL",
+                "src": "/assets/svg/postgresql.svg"
+              },
+              {
+                "name": "SQLite",
+                "src": "/assets/svg/sqlite.svg"
+              },
+              {
+                "name": "phpMyAdmin",
+                "src": "/assets/svg/phpmyadmin.svg"
+              },
+              {
+                "name": "Prisma",
+                "src": "/assets/svg/prisma.svg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Tools & Environment",
+        "subcategories": [
+          {
+            "title": "Version Control",
+            "items": [
+              {
+                "name": "Git",
+                "src": "/assets/svg/git.svg"
+              },
+              {
+                "name": "GitHub",
+                "src": "/assets/svg/github.svg"
+              },
+              {
+                "name": "GitLab",
+                "src": "/assets/svg/gitlab.svg"
+              }
+            ]
+          },
+          {
+            "title": "Environment & DevOps",
+            "items": [
+              {
+                "name": "Docker",
+                "src": "/assets/svg/docker.svg"
+              },
+              {
+                "name": "Bash",
+                "src": "/assets/svg/bash.svg"
+              },
+              {
+                "name": "VSCode",
+                "src": "/assets/svg/vscode.svg"
+              }
+            ]
+          },
+          {
+            "title": "AI",
+            "items": [
+              {
+                "name": "Claude Code",
+                "src": "/assets/svg/claude.svg"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "year": "2026",
+        "company": "BNT Business Telecom",
+        "skills": [
+          "React",
+          "JavaScript",
+          "FastAPI",
+          "Git"
+        ],
+        "role": "Frontend Developer",
+        "type": "Full-time",
+        "period": "Jun 2026 – Present",
+        "location": "Málaga · Hybrid",
+        "description": "Frontend development in React for telecom and IoT SaaS products.",
+        "bullets": [
+          "Frontend for vDesk and HELIoT, an IoT platform for managing devices and automations (KNX, LoRa).",
+          "Integration with Python REST APIs (FastAPI) alongside the backend team.",
+          "Reusable components and responsive interfaces.",
+          "Teamwork with Git, code reviews and continuous delivery."
+        ]
+      },
+      {
+        "year": "2025",
+        "company": "Fundación Esplai – Talent IT",
+        "skills": [
+          "Java",
+          "Spring Boot",
+          "React",
+          "TypeScript",
+          "MySQL",
+          "Docker"
+        ],
+        "role": "Full Stack Developer",
+        "type": "Training contract",
+        "period": "Sep 2025 – Dec 2025",
+        "location": "Málaga · On-site",
+        "description": "Intensive program building full stack web applications with React, TypeScript, Java and Spring Boot.",
+        "bullets": [
+          "CleanWorld project, built end to end.",
+          "REST APIs with Spring Boot, Spring Data JPA/Hibernate and authentication with Spring Security and JWT.",
+          "React and TypeScript SPAs with Tailwind CSS, consuming our own APIs.",
+          "MySQL databases, Swagger documentation, JUnit testing and Docker deployment."
+        ]
+      },
+      {
+        "year": "2025",
+        "company": "Internet Sin Riesgos",
+        "skills": [
+          "WordPress",
+          "WooCommerce",
+          "PHP",
+          "SEO"
+        ],
+        "role": "Web Developer",
+        "type": "Internship",
+        "period": "Mar 2025 – Jun 2025",
+        "location": "Málaga · Remote",
+        "description": "Development and maintenance of websites and online stores with WordPress and WooCommerce.",
+        "bullets": [
+          "Theme layout and customization with HTML, CSS and PHP, with responsive design.",
+          "WooCommerce setup and product catalog and category management.",
+          "On-page SEO, performance and usability optimization."
+        ]
+      },
+      {
+        "year": "2015",
+        "company": "Milotech Informática",
+        "skills": [],
+        "role": "IT Technician",
+        "type": "Internship",
+        "period": "May 2015 – Jul 2015",
+        "location": "Málaga · On-site",
+        "description": "IT technical support and teamwork.",
+        "bullets": []
+      }
+    ]
+  },
+  "projects": {
+    "code": "Code",
+    "technologies-tittle": "Technologies",
+    "show-repository": "Show Repository",
+    "show-demo": "Live Demo",
+    "project": [
+      {
+        "title": "Casita Control",
+        "src": "/assets/img/projects/casita-control.png",
+        "technologies": [
+          {
+            "name": "Next.js",
+            "src": "/assets/svg/nextjs.svg"
+          },
+          {
+            "name": "React",
+            "src": "/assets/svg/react.svg"
+          },
+          {
+            "name": "TypeScript",
+            "src": "/assets/svg/typescript.svg"
+          },
+          {
+            "name": "Tailwind CSS",
+            "src": "/assets/svg/tailwind.svg"
+          },
+          {
+            "name": "Prisma",
+            "src": "/assets/svg/prisma.svg"
+          },
+          {
+            "name": "PostgreSQL",
+            "src": "/assets/svg/postgresql.svg"
+          }
+        ],
+        "repository": null,
+        "deployed": "https://casita.pirson.dev/",
+        "description": "Shopping lists shared with your family, with your supermarket's prices. Works without creating an account."
+      },
+      {
+        "title": "DailyExpenses",
+        "src": "/assets/img/projects/dailyexpenses.png",
+        "technologies": [
+          {
+            "name": "Next.js",
+            "src": "/assets/svg/nextjs.svg"
+          },
+          {
+            "name": "React",
+            "src": "/assets/svg/react.svg"
+          },
+          {
+            "name": "TypeScript",
+            "src": "/assets/svg/typescript.svg"
+          },
+          {
+            "name": "Tailwind CSS",
+            "src": "/assets/svg/tailwind.svg"
+          },
+          {
+            "name": "PostgreSQL",
+            "src": "/assets/svg/postgresql.svg"
+          }
+        ],
+        "repository": null,
+        "deployed": "https://gastos.pirson.dev/",
+        "description": "Personal finance: daily expenses, monthly savings and index fund investment tracking, without connecting to any bank."
+      },
+      {
+        "title": "Box Box",
+        "src": "/assets/img/projects/box-box.png",
+        "technologies": [
+          {
+            "name": "React",
+            "src": "/assets/svg/react.svg"
+          },
+          {
+            "name": "Node.js",
+            "src": "/assets/svg/nodejs.svg"
+          },
+          {
+            "name": "Socket.io",
+            "src": "/assets/svg/socketio.svg"
+          },
+          {
+            "name": "PostgreSQL",
+            "src": "/assets/svg/postgresql.svg"
+          },
+          {
+            "name": "Tailwind CSS",
+            "src": "/assets/svg/tailwind.svg"
+          }
+        ],
+        "repository": "https://github.com/SrPirson/Box-Box",
+        "deployed": null,
+        "description": "Real-time comms and telemetry PWA for racing teams: Bluetooth OBD reading, GPS, automatic lap timing and messages between pit and driver."
+      },
+      {
+        "title": "Instagram Unfollowers",
+        "src": "/assets/img/projects/unfollowers-ig.png",
+        "technologies": [
+          {
+            "name": "JavaScript",
+            "src": "/assets/svg/javascript.svg"
+          },
+          {
+            "name": "Next.js",
+            "src": "/assets/svg/nextjs.svg"
+          },
+          {
+            "name": "Tailwind CSS",
+            "src": "/assets/svg/tailwind.svg"
+          }
+        ],
+        "repository": "https://github.com/SrPirson/Unfollowers_IG",
+        "deployed": "https://unfollowers-ig-extension.vercel.app/",
+        "description": "Browser extension (Manifest V3) that shows who doesn't follow you back on Instagram, with whitelist and single or bulk unfollow. No servers, no passwords."
+      },
+      {
+        "title": "Mapa Balizas V16",
+        "description": "Interactive web application that shows the location of beacons in real time.",
+        "src": "/assets/img/projects/balizasv16.jpg",
+        "technologies": [
+          {
+            "name": "Spring Boot",
+            "src": "/assets/svg/spring.svg"
+          },
+          {
+            "name": "React",
+            "src": "/assets/svg/react.svg"
+          },
+          {
+            "name": "Tailwind CSS",
+            "src": "/assets/svg/tailwind.svg"
+          }
+        ],
+        "repository": null,
+        "deployed": "https://baliza.pirson.dev/"
+      },
+      {
+        "title": "CleanWorld",
+        "description": "Project aimed at identifying, visualizing, and coordinating citizen cleaning actions in real time.",
+        "src": "/assets/img/projects/cleanworld.png",
+        "technologies": [
+          {
+            "name": "Spring Boot",
+            "src": "/assets/svg/spring.svg"
+          },
+          {
+            "name": "React",
+            "src": "/assets/svg/react.svg"
+          },
+          {
+            "name": "Tailwind CSS",
+            "src": "/assets/svg/tailwind.svg"
+          },
+          {
+            "name": "MySQL",
+            "src": "/assets/svg/mysql.svg"
+          }
+        ],
+        "repository": "https://github.com/SrPirson/TerraDev_CleanWorld",
+        "deployed": "https://terradev-cleanworld.vercel.app/"
+      },
+      {
+        "title": "NexeCare",
+        "description": "Collaborative health application developed in a hackathon, connecting patients and healthcare professionals through a modern interface with appointment management features.",
+        "src": "/assets/img/projects/nexecare.jpg",
+        "technologies": [
+          {
+            "name": "Spring Boot",
+            "src": "/assets/svg/spring.svg"
+          },
+          {
+            "name": "React",
+            "src": "/assets/svg/react.svg"
+          },
+          {
+            "name": "Tailwind CSS",
+            "src": "/assets/svg/tailwind.svg"
+          }
+        ],
+        "repository": "https://github.com/SrPirson/NexeCare-Hackathon",
+        "deployed": null
+      },
+      {
+        "title": "SocialiCar",
+        "description": "Web platform to share and rent vehicles among users with messaging, car management, and interactive maps.",
+        "src": "/assets/img/projects/socialicar.png",
+        "technologies": [
+          {
+            "name": "PHP",
+            "src": "/assets/svg/php.svg"
+          },
+          {
+            "name": "HTML",
+            "src": "/assets/svg/html.svg"
+          },
+          {
+            "name": "Bootstrap",
+            "src": "/assets/svg/bootstrap.svg"
+          },
+          {
+            "name": "JavaScript",
+            "src": "/assets/svg/javascript.svg"
+          },
+          {
+            "name": "phpMyAdmin",
+            "src": "/assets/svg/phpmyadmin.svg"
+          }
+        ],
+        "repository": "https://github.com/SrPirson/TFG-SocialiCar",
+        "deployed": "https://socialicar.wuaze.com/"
+      },
+      {
+        "title": "Addons World of Warcraft",
+        "description": "Collection of World of Warcraft addons that enhance the gaming experience by automating tasks, optimizing the interface, and providing mission management tools.",
+        "src": "/assets/img/projects/world-of-warcraft.jpg",
+        "technologies": [
+          {
+            "name": "LUA",
+            "src": "/assets/svg/lua.svg"
+          }
+        ],
+        "repository": "https://github.com/Pirson-s-Addons",
+        "deployed": "https://www.curseforge.com/members/pirson/projects?page=1&sortBy=TotalDownloads"
+      }
+    ],
+    "plugins-title": "Claude Code Plugins",
+    "plugins-subtitle": "My own extensions for Claude Code, Anthropic's coding agent.",
+    "plugins": [
+      {
+        "title": "Cabina",
+        "src": "/assets/img/projects/cabina.png",
+        "technologies": [
+          {
+            "name": "TypeScript",
+            "src": "/assets/svg/typescript.svg"
+          },
+          {
+            "name": "Claude Code",
+            "src": "/assets/svg/claude.svg"
+          }
+        ],
+        "repository": "https://github.com/SrPirson/cabina",
+        "deployed": null,
+        "description": "Side pane for Claude Code: model, context usage, rate limits, cost, agent activity and project status at a glance."
+      },
+      {
+        "title": "webeyes",
+        "src": "/assets/img/projects/webeyes.png",
+        "technologies": [
+          {
+            "name": "Python",
+            "src": "/assets/svg/python.svg"
+          },
+          {
+            "name": "Claude Code",
+            "src": "/assets/svg/claude.svg"
+          }
+        ],
+        "repository": "https://github.com/SrPirson/webeyes",
+        "deployed": null,
+        "description": "Lets Claude Code watch videos from YouTube, TikTok, Instagram and 1000+ sites: downloads them, transcribes with timestamps and extracts frames."
+      }
+    ]
+  },
+  "routes": {
+    "about-me": "/about-me",
+    "projects": "/projects",
+    "contact": "/contact"
   }
-  
+}

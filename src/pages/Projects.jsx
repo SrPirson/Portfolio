@@ -1,11 +1,12 @@
 import React from "react";
 import ProjectCard from "../components/projects/ProjectCard";
 import { useTranslation } from "react-i18next";
-import { IconCode } from "@tabler/icons-react";
+import { IconCode, IconPlug } from "@tabler/icons-react";
 
 const Projects = () => {
   const { t } = useTranslation("global");
   const projects = t("projects.project", { returnObjects: true }) || [];
+  const plugins = t("projects.plugins", { returnObjects: true }) || [];
 
   return (
     <section className="container mx-auto px-4 py-32 min-h-screen">
@@ -21,6 +22,23 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div key={index} className="flex">
             <ProjectCard {...project} />
+          </div>
+        ))}
+      </div>
+
+      <div className="flex flex-col items-center mt-32 mb-16 text-center">
+        <h2 className="text-3xl md:text-5xl font-bold text-title mb-4 flex items-center gap-4">
+          <IconPlug className="w-9 h-9 md:w-12 md:h-12 text-violet-500" />
+          {t("projects.plugins-title")}
+        </h2>
+        <div className="h-1.5 w-24 bg-violet-500 rounded-full mb-6"></div>
+        <p className="text-text max-w-xl">{t("projects.plugins-subtitle")}</p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {plugins.map((plugin) => (
+          <div key={plugin.title} className="flex">
+            <ProjectCard {...plugin} />
           </div>
         ))}
       </div>

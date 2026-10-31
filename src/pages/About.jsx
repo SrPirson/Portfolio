@@ -1,6 +1,6 @@
 import React from "react";
 import { Timeline } from "../components/ui/timeline";
-import { IconBooks, IconCertificate, IconCode } from "@tabler/icons-react";
+import { IconBooks, IconBriefcase, IconCertificate, IconCode } from "@tabler/icons-react";
 import Scroll from "/src/components/Scroll";
 
 import { useTranslation } from "react-i18next";
@@ -31,6 +31,47 @@ const About = () => {
               />
             </div>
           </div>
+        </div>
+      ),
+    }),
+  );
+
+  const experiencia = t("about.experience", { returnObjects: true }).map(
+    (item) => ({
+      title: item.year,
+      content: (
+        <div className="text-left space-y-3">
+          <div>
+            <h2 className="text-lg md:text-xl font-semibold text-subtitle">
+              {item.role}
+            </h2>
+            <p className="text-sm md:text-base font-medium text-text">
+              {item.company} · {item.type}
+            </p>
+            <p className="text-xs md:text-sm text-text/60">
+              {item.period} · {item.location}
+            </p>
+          </div>
+          <p className="text-sm md:text-base text-text">{item.description}</p>
+          {item.bullets.length > 0 && (
+            <ul className="list-disc pl-5 space-y-1 text-sm text-text/90">
+              {item.bullets.map((b) => (
+                <li key={b}>{b}</li>
+              ))}
+            </ul>
+          )}
+          {item.skills.length > 0 && (
+            <div className="flex flex-wrap gap-2 pt-1">
+              {item.skills.map((s) => (
+                <span
+                  key={s}
+                  className="px-2.5 py-0.5 text-xs font-medium rounded-full bg-violet-100/60 dark:bg-violet-500/15 text-violet-700 dark:text-violet-300 border border-violet-300/40 dark:border-violet-500/20"
+                >
+                  {s}
+                </span>
+              ))}
+            </div>
+          )}
         </div>
       ),
     }),
@@ -108,6 +149,15 @@ const About = () => {
           </div>
           <Scroll />
         </div>
+
+        {/* Sección experiencia */}
+        <section className="relative w-full">
+          <h1 className="text-3xl md:text-4xl flex items-center justify-center gap-2 mb-8 text-title font-bold">
+            <IconBriefcase className="w-8 h-8 text-violet-500" />
+            {t("about.sections.experience")}
+          </h1>
+          <Timeline data={experiencia} />
+        </section>
 
         {/* Sección formación */}
         <section className="relative w-full">
