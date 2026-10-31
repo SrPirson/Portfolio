@@ -35,7 +35,8 @@ const Projects = () => {
         <p className="text-text max-w-xl">{t("projects.plugins-subtitle")}</p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* 2 columnas centradas: con 3 quedaba un hueco vacío a la derecha */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:w-2/3 lg:mx-auto">
         {plugins.map((plugin) => (
           <div key={plugin.title} className="flex">
             <ProjectCard {...plugin} />

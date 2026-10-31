@@ -14,7 +14,6 @@ import global_fr from "./locales/fr/global.json";
 
 // Detectar idioma del navegador y escoger los dos primeros caracteres
 const browserLang = navigator.language.slice(0, 2);
-console.log(navigator.language);
 
 
 // Recuperar último idioma seleccionado si existe
@@ -40,9 +39,12 @@ i18next.init({
   }
 })
 
+document.documentElement.lang = defaultLang;
+
 // Escuchar cambios de idioma y guardar en localStorage
 i18next.on("languageChanged", (lng) => {
   localStorage.setItem("lang", lng);
+  document.documentElement.lang = lng;
 });
 
 createRoot(document.getElementById('root')).render(

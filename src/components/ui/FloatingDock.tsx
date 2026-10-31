@@ -73,6 +73,7 @@ const FloatingDockMobile = ({
                       setOpen(false);
                     }
                   }}
+                  aria-label={item.title}
                   className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-50"
                   download={item.download}
                 >
@@ -86,6 +87,8 @@ const FloatingDockMobile = ({
 
       <button
         onClick={() => setOpen(!open)}
+        aria-label="Menu"
+        aria-expanded={open}
         className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-50"
       >
         <IconLayoutNavbarExpand className="h-5 w-5 text-neutral-500" />
@@ -171,6 +174,7 @@ function IconContainer({
         }
       }}
       download={download}
+      aria-label={title}
     >
       <motion.div
         ref={ref}

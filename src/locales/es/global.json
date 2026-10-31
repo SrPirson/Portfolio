@@ -280,6 +280,10 @@
                 "src": "/assets/svg/mysql.svg"
               },
               {
+                "name": "MySQL Workbench",
+                "src": "/assets/svg/mysql.svg"
+              },
+              {
                 "name": "PostgreSQL",
                 "src": "/assets/svg/postgresql.svg"
               },
@@ -329,10 +333,27 @@
               {
                 "name": "Bash",
                 "src": "/assets/svg/bash.svg"
-              },
+              }
+            ]
+          },
+          {
+            "title": "IDEs y Editores",
+            "items": [
               {
                 "name": "VSCode",
                 "src": "/assets/svg/vscode.svg"
+              },
+              {
+                "name": "IntelliJ IDEA",
+                "src": "/assets/svg/intellij.svg"
+              },
+              {
+                "name": "Eclipse",
+                "src": "/assets/svg/eclipse.svg"
+              },
+              {
+                "name": "NetBeans",
+                "src": "/assets/svg/netbeans.svg"
               }
             ]
           },
@@ -342,6 +363,18 @@
               {
                 "name": "Claude Code",
                 "src": "/assets/svg/claude.svg"
+              },
+              {
+                "name": "ChatGPT",
+                "src": "/assets/svg/chatgpt.svg"
+              },
+              {
+                "name": "Gemini",
+                "src": "/assets/svg/gemini.svg"
+              },
+              {
+                "name": "Copilot",
+                "src": "/assets/svg/copilot.svg"
               }
             ]
           }

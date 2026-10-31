@@ -84,7 +84,10 @@ export default function LangSwitcher() {
     >
       {/* Botón principal */}
       <button
-        onClick={() => setIsOpen((prev) => !prev)}
+        // En táctil el tap dispara mouseenter y luego click: un toggle lo cerraría al instante
+        onClick={() => setIsOpen(true)}
+        aria-label="Idioma / Language"
+        aria-expanded={isOpen}
         className="w-11 h-11 flex items-center justify-center rounded-xl shadow-card bg-white/0.1 backdrop-blur-xs border border-black/30 dark:border-white/20 transition-all duration-300"
       >
         {flags[currentLang]}

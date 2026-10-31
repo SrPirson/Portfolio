@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -24,13 +24,30 @@ const pageTransition = {
   duration: 0.1,
 };
 
+function localizedPath(i18n, pathname) {
+  for (const lng of Object.keys(i18n.options.resources)) {
+    const routes = i18n.getResourceBundle(lng, "global").routes;
+    const key = Object.keys(routes).find((k) => routes[k] === pathname);
+    if (key) return i18n.t(`routes.${key}`, { ns: "global" });
+  }
+  return "/";
+}
+
 function AppContent() {
   const location = useLocation();
-  const [t] = useTranslation("global");
+  const [t, i18n] = useTranslation("global");
+
+  // Ruta de otro idioma (p. ej. /proyectos con la web en inglés) → equivalente en el idioma actual; si no existe, a inicio.
+  // Fuera de AnimatePresence para no esperar a una animación de salida de una página vacía.
+  const knownPaths = ["/", t("routes.about-me"), t("routes.projects"), t("routes.contact")];
+  if (!knownPaths.includes(location.pathname)) {
+    return <Navigate to={localizedPath(i18n, location.pathname)} replace />;
+  }
+
   return (
     <>
       {/* Navbar */}
-      <div className="fixed top-8 left-0 right-0 z-20 px-8 flex items-center justify-between">
+      <div className="fixed top-8 left-0 right-0 z-20 px-4 md:px-8 flex items-center justify-between">
         {/* Texto animado a la izquierda */}
         <div className="text-violet-600 dark:text-violet-50 select-none">
           <LayoutTextFlip

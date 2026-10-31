@@ -1,16 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 const ThemeSwitcher = () => {
-  const [isDark, setIsDark] = useState(false);
-
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-    const initialTheme = savedTheme || (prefersDark ? "dark" : "light");
-    document.documentElement.classList.toggle("dark", initialTheme === "dark");
-    setIsDark(initialTheme === "dark");
-  }, []);
+  // El tema inicial ya lo aplica el script de index.html
+  const [isDark, setIsDark] = useState(() =>
+    document.documentElement.classList.contains("dark"),
+  );
 
   const handleToggle = () => {
     const newTheme = !isDark ? "dark" : "light";

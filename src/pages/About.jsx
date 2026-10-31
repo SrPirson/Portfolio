@@ -178,20 +178,18 @@ const About = () => {
           <div className="flex justify-center">
             <section className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-8 gap-y-20 w-[95%] md:w-full mx-auto">
               {visibleCerts.map((cert, index) => (
-                <article
+                <a
                   key={index}
+                  href={`/assets/certificados/pdf/${cert.src.split("/").pop().replace(".jpg", ".pdf")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="group relative flex flex-col items-center justify-center bg-violet-100/20 dark:bg-neutral-800/40 rounded-3xl p-6 transition-all duration-500 hover:bg-violet-100/40 dark:hover:bg-neutral-800/60 border border-transparent hover:border-violet-500/30 cursor-pointer"
-                  onClick={() =>
-                    window.open(
-                      `/assets/certificados/pdf/${cert.src.split("/").pop().replace(".jpg", ".pdf")}`,
-                      "_blank",
-                    )
-                  }
                 >
                   <div className="absolute -top-6 transition-all duration-500 group-hover:-top-8 group-hover:scale-105">
                     <img
                       src={cert.src}
                       alt={cert.title}
+                      loading="lazy"
                       className="w-48 md:w-56 object-cover shadow-2xl rounded-xl border-4 border-white dark:border-neutral-700"
                     />
                   </div>
@@ -206,7 +204,7 @@ const About = () => {
                       {cert.date}
                     </p>
                   </div>
-                </article>
+                </a>
               ))}
             </section>
           </div>

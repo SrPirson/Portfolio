@@ -33,6 +33,7 @@ const SocialIcon = ({ title, icon, href, download, copyText, copiedText }) => {
       download={download}
       target={!copyText && !download ? "_blank" : undefined}
       rel={!copyText && !download ? "noopener noreferrer" : undefined}
+      aria-label={title}
       className="relative flex flex-col items-center justify-center"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
