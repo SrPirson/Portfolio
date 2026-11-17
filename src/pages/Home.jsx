@@ -81,6 +81,8 @@ const Home = () => {
     {
       title: t("home.social.email"),
       icon: <IconMail />,
+      // real href keeps the link crawlable and the aria-label valid; the click still copies
+      href: "mailto:franciscortesp@gmail.com",
       copyText: "franciscortesp@gmail.com",
     },
     {
